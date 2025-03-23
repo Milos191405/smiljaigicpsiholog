@@ -1,0 +1,78 @@
+"use client"; // Needed if using Next.js App Router
+
+import { useState } from "react";
+import Link from "next/link";
+import { FaBars, FaTimes } from "react-icons/fa";
+
+const navLinks = [
+  { to: "/", label: "Pocetna" },
+  { to: "/o-meni", label: "O meni" },
+  { to: "/psihoterapija", label: "Psihoterapija" },
+  { to: "/blog", label: "Blog" },
+  { to: "/kontakt", label: "Kontakt" },
+];
+
+export default function Navbar() {
+  const [nav, setNav] = useState(false);  // State for menu visibility
+  const handleClick = () => setNav(!nav); // Toggle menu visibility
+  const closeMenu = () => setNav(false);  // Close menu on link click
+
+  return (
+    <nav className="fixed top-0 left-0 w-full bg-background shadow-md z-50">
+      <div className="flex justify-between items-center px-6 py-4">
+        {/* Logo */}
+        <Link href="/" className="text-xl font-bold text-gray-700">
+          Porodični terapeut
+        </Link>
+
+        {/* Hamburger Icon: only visible when nav is false */}
+        <button
+          onClick={handleClick}
+          className="lg:hidden z-50 cursor-pointer"
+          aria-controls="mobile-menu"
+          aria-expanded={nav ? "true" : "false"}
+          aria-label="Toggle navigation menu"
+        >
+          {!nav ? <FaBars size={24} /> : null}
+        </button>
+      </div>
+
+      {/* Desktop Menu (Hidden on Mobile) */}
+      <ul className="hidden lg:flex justify-center gap-6 text-lg text-gray-700">
+        {navLinks.map(({ to, label }) => (
+          <li key={to}>
+            <Link href={to} className="hover:text-red-500">
+              {label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      {/* Mobile Menu with Smooth Transition */}
+      <div
+        className={`absolute top-0 left-0 w-full h-screen bg-background flex flex-col items-center justify-center transition-all duration-500 ease-in-out ${
+          nav ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+        }`}
+      >
+        {/* Close Menu Button */}
+        <button
+          onClick={closeMenu}
+          className={`absolute top-6 right-6 text-3xl text-gray-700 ${!nav ? "hidden" : ""}`}
+        >
+          <FaTimes />
+        </button>
+
+        {/* Menu Links */}
+        <ul className="flex flex-col gap-6 text-2xl text-gray-700">
+          {navLinks.map(({ to, label }) => (
+            <li key={to} onClick={closeMenu}>
+              <Link href={to} className="hover:text-red-500">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
+}
