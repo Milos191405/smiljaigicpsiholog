@@ -17,7 +17,7 @@ okvira socijalne zaštite- razvoda, delinkvencije...</p>
             alt="Logo"
             width={3000}
             height={1000}
-            className=" px-20 pb-4" // 'object-contain' will maintain the aspect ratio of the image.
+            className=" px-20 pb-4" 
           />
         </div>
 
