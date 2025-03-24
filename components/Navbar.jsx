@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* Logo - Always Centered */}
         <Link
           href="/"
-          className="text-xl font-bold text-gray-700  transition-all duration-300"
+          className="text-2xl font-bold text-gray-700  transition-all duration-300"
         >
           Porodični terapeut
         </Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
         {/* Logo at the Top of the Menu */}
         <Link
           href="/"
-          className="text-xl font-bold text-gray-700 mt-6"
+          className="text-2xl font-bold text-gray-700 mt-6"
         >
           Porodični terapeut
         </Link>
