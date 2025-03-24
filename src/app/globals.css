@@ -2,8 +2,10 @@
 
 
 :root {
-  --background: #cdfcec;
-  --foreground: #171717;
+  --background: #fdfbf6;
+  --foreground: #164e4e;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 @theme inline {
@@ -13,12 +15,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -27,7 +29,11 @@ body {
 }
 
 @theme {
-  --font-display: "Montserrat", "sans-serif";
+  --font-display: "Geist", "sans-serif";
   --font-display--font-feature-settings: "cv02", "cv03", "cv04", "cv11"; 
   --font-display--font-variation-settings: "opsz" 32; 
 }
+
+/* primary bg #71cd7d
+secondary bg #6cbb9d
+ternary bg #66a8bc */

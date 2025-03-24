@@ -1,4 +1,4 @@
-"use client"; // Needed if using Next.js App Router
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -6,34 +6,38 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const navLinks = [
   { to: "/", label: "Pocetna" },
-  { to: "/o-meni", label: "O meni" },
-  { to: "/psihoterapija", label: "Psihoterapija" },
-  { to: "/blog", label: "Blog" },
-  { to: "/kontakt", label: "Kontakt" },
+  { to: "/O_meni", label: "O meni" },
+  { to: "/Psihoterapija", label: "Psihoterapija" },
+  { to: "/Blog", label: "Blog" },
+  { to: "/Kontakt", label: "Kontakt" },
 ];
 
 export default function Navbar() {
-  const [nav, setNav] = useState(false);  // State for menu visibility
+  const [nav, setNav] = useState(false); // State for menu visibility
   const handleClick = () => setNav(!nav); // Toggle menu visibility
-  const closeMenu = () => setNav(false);  // Close menu on link click
+  const closeMenu = () => setNav(false); // Close menu on link click
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-background shadow-md z-50">
-      <div className="flex justify-between items-center px-6 py-4">
-        {/* Logo */}
-        <Link href="/" className="text-xl font-bold text-gray-700">
+    <nav className="fixed  top-0 left-0 w-full bg-background shadow-lg z-50">
+      {/* Navbar Container */}
+      <div className="relative flex justify-center items-center px-6 py-4">
+        {/* Logo - Always Centered */}
+        <Link
+          href="/"
+          className="text-xl font-bold text-gray-700  transition-all duration-300"
+        >
           Porodični terapeut
         </Link>
 
-        {/* Hamburger Icon: only visible when nav is false */}
+        {/* Hamburger Icon (Right Side) */}
         <button
           onClick={handleClick}
-          className="lg:hidden z-50 cursor-pointer"
+          className="absolute right-6 lg:hidden z-50 cursor-pointer"
           aria-controls="mobile-menu"
           aria-expanded={nav ? "true" : "false"}
           aria-label="Toggle navigation menu"
         >
-          {!nav ? <FaBars size={24} /> : null}
+          {!nav ? <FaBars size={20} /> : null}
         </button>
       </div>
 
@@ -48,22 +52,30 @@ export default function Navbar() {
         ))}
       </ul>
 
-      {/* Mobile Menu with Smooth Transition */}
+      {/* Mobile Menu - Centered on Screen */}
       <div
-        className={`absolute top-0 left-0 w-full h-screen bg-background flex flex-col items-center justify-center transition-all duration-500 ease-in-out ${
-          nav ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+        className={`fixed top-0 left-0 w-full h-screen bg-background flex flex-col items-center  transition-all duration-500 ease-in-out ${
+          nav ? "translate-y-0 opacity-100 " : "-translate-y-full opacity-0 "
         }`}
       >
+        {/* Logo at the Top of the Menu */}
+        <Link
+          href="/"
+          className="text-xl font-bold text-gray-700 mt-6"
+        >
+          Porodični terapeut
+        </Link>
+
         {/* Close Menu Button */}
         <button
           onClick={closeMenu}
-          className={`absolute top-6 right-6 text-3xl text-gray-700 ${!nav ? "hidden" : ""}`}
+          className="absolute top-6 right-6 cursor-pointer  text-3xl text-gray-700"
         >
           <FaTimes />
         </button>
 
-        {/* Menu Links */}
-        <ul className="flex flex-col gap-6 text-2xl text-gray-700">
+        {/* Mobile Menu Links (Centered) */}
+        <ul className="flex flex-col gap-6 text-2xl text-gray-700 mt-auto mb-auto">
           {navLinks.map(({ to, label }) => (
             <li key={to} onClick={closeMenu}>
               <Link href={to} className="hover:text-red-500">
