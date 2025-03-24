@@ -13,7 +13,7 @@ okvira socijalne zaštite- razvoda, delinkvencije...</p>
 
 <div className="">
           <Image
-            src="/Smiljka 2.jpg"
+            src="@/public/Smiljka 2.jpg"
             alt="Logo"
             width={3000}
             height={1000}
