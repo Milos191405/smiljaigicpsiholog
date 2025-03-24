@@ -13,7 +13,7 @@ okvira socijalne zaštite- razvoda, delinkvencije...</p>
 
 <div className="">
           <Image
-            src="/Smiljka 2.jpg"
+            src="/Smiljka2.jpg"
             alt="Smilja Igic, vas psiholog i terapeut"
             width={3000}
             height={1000}

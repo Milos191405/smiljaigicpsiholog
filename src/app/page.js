@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <div className="h-">
           <Image
-            src="/Smiljka 1.jpg"
+            src="/Smiljka1.jpg"
             alt="Logo"
             width={3000}
             height={1000}
@@ -42,7 +42,7 @@ export default function Home() {
         </p>
         <div className="h-">
           <Image
-            src="/Smiljka 1.jpg"
+            src="/Smiljka1.jpg"
             alt="Logo"
             width={3000}
             height={1000}
@@ -64,7 +64,7 @@ export default function Home() {
         </p>
         <div className="h-">
           <Image
-            src="/Smiljka 1.jpg"
+            src="/Smiljka1.jpg"
             alt="Logo"
             width={3000}
             height={1000}
