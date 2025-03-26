@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer.js/page'
+import Footer from '@/components/Footer'
 
 function O_meni() {
   return (

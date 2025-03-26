@@ -1,76 +1,61 @@
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import Footer from "@/components/Footer.js/page";
+import Footer from "@/components/Footer";
+import ImageComponent from "@/components/ImageComponent";
+import TextComponentHome from "@/components/TextComponentHome";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <article className="pt-10 ">
+      <article className="pt-10 md:max-w-[680px] border border-red-600 md:mx-auto">
         <div className="text-center p-4 ">
           {/* <p className="text-xl">Zasnovana na ponašanju </p> */}
-          <p className=" pt-10 text-3xl">
+          <p className=" pt-10 text-3xl md:text-4xl ">
             Terapija za decu, <br /> tinejdžere i <br />
             njihove porodice.
           </p>
 
-          <h1 className="text-2xl pt-10 italic font-bold ">
+          <h1 className="text-2xl pt-10 italic font-bold md:text-3xl ">
             <span>Dipl. Psiholog </span>Smilja Igic
           </h1>
         </div>
-        <div className="h-">
-          <Image
-            src="/Smiljka1.jpg"
-            alt="Logo"
-            width={3000}
-            height={1000}
-            className="object-contain bg-[#164e4e] p-5" // 'object-contain' will maintain the aspect ratio of the image.
-          />
-        </div>
 
-        <p className="text-lg p-4 ">
+        {/* First Image */}
+        <ImageComponent src="/Smiljka1.jpg" alt="Smilja Igic vas psiholog" />
+
+        <TextComponentHome>
           <span className="font-bold italic text-xl">Razgovor</span> koji otvara
           perspektive, pokreće i ohrabruje na rešavanje problema je potreban
           savremenom čoveku kako bi uspešno prevladao svakodnevne izazove
           života.
-        </p>
-        <p className="text-lg p-4 ">
+        </TextComponentHome>
+
+        <TextComponentHome>
           <span className="font-bold italic text-xl "> Uloge</span> koje živimo
           (roditeljstvo, detinjstvo, partnerstvo, profesionalne pozicije...),
           nameću očekivanja koja mogu biti u neskladu sa ličnom prirodom i
           kreativnim razvojem identiteta.
-        </p>
-        <div className="h-">
-          <Image
-            src="/Smiljka1.jpg"
-            alt="Logo"
-            width={3000}
-            height={1000}
-            className="object-contain bg-[#164e4e] p-5" // 'object-contain' will maintain the aspect ratio of the image.
-          />
-        </div>
-        <p className="text-lg p-4">
-          Značenja koja čovek pridaje{" "}
-          <span className="font-bold italic">ključnim pojmovima života </span>
-          (ljubav, sreća, uspeh...), duboko određuju osećaj ostvarenosti i
-          zadovljstva.
-        </p>
-        <p className="text-lg p-4">
-          Verujem da <span className="italic font-bold">ples</span> terapeuta i
+        </TextComponentHome>
+
+        {/* Second Image */}
+        <ImageComponent src="/Smiljka1.jpg" alt="Smilja Igic vas psiholog" />
+
+        <TextComponentHome>
+          <span className="font-bold italic">Ljubav, sreća, uspeh</span> su samo
+          neki od ključnih pojmova života kojima ljudi pridaju značenje, a koji
+          duboko određuju osećaj ostvarenosti i zadovljstva.
+        </TextComponentHome>
+
+        <TextComponentHome>
+          <span className="italic font-bold">Ples</span> terapeuta i
           klijenta vođen stručnim i fokusiranim metodama i tehnikama može
           odgovoriti i na najteže izazove kao što su gubici, traume nasilja,
           lične emotivne krize, narušeni partnerski odnosi ili problemi u
           odrastanju dece.
-        </p>
-        <div className="h-">
-          <Image
-            src="/Smiljka1.jpg"
-            alt="Logo"
-            width={3000}
-            height={1000}
-            className="object-contain bg-[#164e4e] p-5" // 'object-contain' will maintain the aspect ratio of the image.
-          />
-        </div>
+        </TextComponentHome>
+
+        {/* Third Image */}
+        <ImageComponent src="/Smiljka2.jpg" alt="Smilja Igic vas psiholog" />
       </article>
       <Footer />
     </>
