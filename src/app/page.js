@@ -15,7 +15,7 @@ export default function Home() {
       <article className="pt-10 md:max-w-[700px] md:mx-auto lg:pt-24 lg:max-w-[1000px] xl:max-w-[1500px]">
         <div className="text-center p-4  ">
           {/* <p className="text-xl">Zasnovana na ponašanju </p> */}
-          <p className=" pt-10 text-lg md:text-2xl lg:text-3xl ">
+          <p className=" pt-10 text-md md:text-2xl lg:text-3xl ">
             Terapija za decu,{" "}
             <br
               className="
@@ -25,7 +25,7 @@ export default function Home() {
             njihove porodice.
           </p>
           <Link href={"/O_meni"}>
-            <h1 className="text-xl pt-10 italic  md:text-2xl lg:text-3xl lg:py-10  ">
+            <h1 className="text-lg pt-10 italic  md:text-2xl lg:text-3xl lg:py-10  ">
               <span>Dipl. Psiholog </span>Smilja Igic
             </h1>
           </Link>
