@@ -18,13 +18,13 @@ export default function Navbar() {
   const closeMenu = () => setNav(false); // Close menu on link click
 
   return (
-    <nav className="fixed  top-0 left-0 w-full bg-background shadow-lg z-50">
+    <nav className="fixed  top-0 left-0 w-full bg-background shadow-lg z-50 lg:h-[100px]  lg:flex lg:justify-between lg:items-center lg:px-6">
       {/* Navbar Container */}
-      <div className="relative flex justify-center items-center px-6 py-4">
+      <div className="relative flex justify-center items-center px-6 py-4 lg:px-0">
         {/* Logo - Always Centered */}
         <Link
           href="/"
-          className="text-2xl font-bold text-gray-700  transition-all duration-300"
+          className="text-2xl font-bold transition-all duration-300 md:text-3xl lg:text-2xl hover:text-orange-300"
         >
           Porodični terapeut
         </Link>
@@ -42,10 +42,10 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Menu (Hidden on Mobile) */}
-      <ul className="hidden lg:flex justify-center gap-6 text-lg text-gray-700">
+      <ul className="hidden lg:flex justify-between gap-6 text-lg lg:text-xl">
         {navLinks.map(({ to, label }) => (
           <li key={to}>
-            <Link href={to} className="hover:text-red-500">
+            <Link href={to} className="hover:text-orange-300">
               {label}
             </Link>
           </li>
@@ -61,7 +61,7 @@ export default function Navbar() {
         {/* Logo at the Top of the Menu */}
         <Link
           href="/"
-          className="text-2xl font-bold text-gray-700 mt-6"
+          className="text-2xl font-bold  mt-6 md:text-3xl"
         >
           Porodični terapeut
         </Link>

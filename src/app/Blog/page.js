@@ -1,14 +1,14 @@
-import Navbar from "@/components/Navbar"
-
+import Navbar from "@/components/Navbar";
+import ImageComponent2 from "@/components/ImageComponent";
 function Blog() {
   return (
     <>
-     <Navbar />
-     <article className="flex justify-center items-center h-96 text-2xl">
-   Stranica je trenutno u izradi!
-   </article>
+      <Navbar />
+      <article className=" pt-[200px]">
+       Stranica je u izradi
+      </article>
     </>
-  )
+  );
 }
 
-export default Blog
+export default Blog;

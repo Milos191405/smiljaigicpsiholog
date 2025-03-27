@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-const ImageSection = ({ src, alt = "Image" }) => (
-    <div className="flex justify-center">
+const ImageSection = ({ src, alt, className }) => (
+    <div className={`flex justify-center ${className}`}>
       <Image
         src={src}
         alt={alt}
