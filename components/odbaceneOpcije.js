@@ -1,4 +1,6 @@
-import React from 'react'
+import ImageComponent from "./ImageComponent";
+import TextComponentHome from "./TextComponentHome";
+
 
 function odbaceneOpcije() {
   return (
