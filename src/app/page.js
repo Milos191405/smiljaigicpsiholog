@@ -13,9 +13,9 @@ export default function Home() {
     <>
       <Navbar />
       <article className="pt-10 md:max-w-[700px] md:mx-auto lg:pt-24 lg:max-w-[1000px] xl:max-w-[1500px]">
-        <div className="text-center p-4 ">
+        <div className="text-center p-4  ">
           {/* <p className="text-xl">Zasnovana na ponašanju </p> */}
-          <p className=" pt-10 text-lg md:text-4xl ">
+          <p className=" pt-10 text-lg md:text-2xl lg:text-3xl ">
             Terapija za decu,{" "}
             <br
               className="
@@ -25,18 +25,18 @@ export default function Home() {
             njihove porodice.
           </p>
           <Link href={"/O_meni"}>
-            <h1 className="text-xl pt-10 italic  md:text-3xl lg:py-10  ">
+            <h1 className="text-xl pt-10 italic  md:text-2xl lg:text-3xl lg:py-10  ">
               <span>Dipl. Psiholog </span>Smilja Igic
             </h1>
           </Link>
         </div>
 
-        <div className=" lg:flex pb-10">
+        <div className=" lg:flex lg:justify-between pb-10">
           {/* First Image */}
           <ImageComponent
             src="/Smiljka1.jpg"
             alt="Smilja Igic vas psiholog"
-            className="lg:w-1/3 object-containe"
+            className="lg:w-1/3 object-contain"
           />
           <div className=" lg:flex lg:flex-col lg:w-1/2 lg:justify-center">
             {" "}
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         {/* Second Image */}
-        <div className="lg:flex flex-row-reverse pb-10">
+        <div className="lg:flex flex-row-reverse lg:lg:justify-between pb-10">
           <ImageComponent
             src="/Smiljka3.jpg"
             alt="Smilja Igic vas psiholog"

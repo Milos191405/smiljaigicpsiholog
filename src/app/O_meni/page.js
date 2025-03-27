@@ -6,8 +6,9 @@ function O_meni() {
   return (
     <>
     <Navbar />
-    <article className='pt-20'>
-      <p className='text-lg px-4 pb-4 '>
+    <article className='pt-20 md:max-w-[700px] md:mx-auto lg:pt-24 lg:max-w-[1000px] xl:max-w-[1500px]'>
+      <h2 className='text-xl italic text-center font-bold pb-8 md:text-2xl lg:text-3xl md:pt-10'>Smilja Igic</h2>
+      <p className='text-lg px-4 pb-4 md:pb-8 '>
     <span className="font-bold italic">Psiholog</span> i <span className="font-bold italic">psihoterapeut</span> sa preko 23 godina iskustva u radu iz oblasti porodičnih odnosa, najviše iz
 okvira socijalne zaštite- razvoda, delinkvencije...</p>
 
@@ -17,18 +18,23 @@ okvira socijalne zaštite- razvoda, delinkvencije...</p>
             alt="Smilja Igic, vas psiholog i terapeut"
             width={3000}
             height={1000}
-            className=" px-20 pb-4" 
+            className=" px-20 pb-4 md:px-30" 
           />
         </div>
 
-<p className='text-lg p-4'> Posebne specijalizacije završila je u oblasti
-porodičnog i partnerskog nasilja, kao i rada sa decom sa problemima u ponašanju. Značajno iskustvo
-je stekla u radu kao savetnik na roditeljskom telefonu i dečijoj liniji.</p>
+        <p className="text-lg p-4 ">
+  Diplomirala je na Fakultetu u Novom Sadu, gde je stekla temeljna znanja iz oblasti psihologije i psihoterapije. 
+  Posebne specijalizacije završila je u oblasti porodičnog i partnerskog nasilja, kao i rada sa decom koja imaju probleme u ponašanju. 
+</p>
+<p className="text-lg p-4"> Značajno iskustvo stekla je kroz rad kao savetnik na roditeljskom telefonu i dečijoj liniji, pružajući podršku i smernice roditeljima i deci u kriznim situacijama.</p>
 
-<p className='text-lg p-4'> Višegodišnja psihoterapijska
-praksa sistemske porodične psihoterapije najviše je usmerena na pomoć u izazovima narušenih
-partnerskih odnosa, roditeljstva, emotivnih gubitaka. Poslednje dve godine u edukaciji iz oblasti rada
-sa traumom kod dece i odraslih.</p>
+<p className="text-lg p-4">
+  Višegodišnja psihoterapijska praksa u sistemskoj porodičnoj psihoterapiji najviše je usmerena na pomoć pri izazovima narušenih partnerskih odnosa, roditeljstva i emotivnih gubitaka. 
+  Pored toga, poseduje bogato iskustvo u radu sa osobama koje se suočavaju sa stresom, anksioznošću i traumatskim iskustvima.
+</p>
+
+<p className='text-lg p-4'>Poslednje dve godine posvećena je dodatnoj edukaciji iz oblasti rada sa traumom kod dece i odraslih, sa ciljem pružanja još efikasnije i sveobuhvatnije podrške klijentima.</p>
+
     </article>
     <Footer />
 
