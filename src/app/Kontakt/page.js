@@ -3,14 +3,15 @@ function Kontakt() {
   return (
     <>
         <Navbar />
-        <article className="flex justify-center items-center h-96 text-2xl pt-20">
-          <form className="flex flex-col text-lg ">
-            <label for="first name" className="border border-gray-300">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+        <h1 className="pt-20 text-center">Kontakt</h1>
+        <article className="flex justify-center items-center pt-10">
+          <form className="flex flex-col  ">
+            <label for="first name" className="">Ime</label>
+            <input type="text" id="fname" name="firstname" placeholder="Ime..." className="border border-foreground"></input>
+            <label for="lname">Prezime</label>
+            <input type="text" id="lname" name="lastname" placeholder="Prezime.."></input>
+            <label for="subject">Tema</label>
+            <textarea id="subject" name="subject" placeholder="Reci mi sta te muci.."></textarea>
             <input type="submit" value="Submit"></input>
           </form>
    </article>

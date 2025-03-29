@@ -26,7 +26,7 @@ export default async function Blog() {
   return (
     <>
       <Navbar />
-      <article className="pt-30">
+      <article className="pt-20">
         <p className="text-center text-lg  font-bold">Blog</p>
         <ul className="mt-8 space-y-4">
           {posts.map((post) => (
