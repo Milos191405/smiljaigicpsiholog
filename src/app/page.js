@@ -13,9 +13,9 @@ export default function Home() {
     <>
       <Navbar />
       <article className="pt-10 md:max-w-[700px] md:mx-auto lg:pt-24 lg:max-w-[1000px] xl:max-w-[1500px]">
-        <div className="text-center p-4  ">
+        <div className="text-center p-4 ">
           {/* <p className="text-xl">Zasnovana na ponašanju </p> */}
-          <p className=" pt-10 text-md md:text-2xl lg:text-3xl ">
+          <p className=" pt-10  md:text-lg lg:text-xl ">
             Terapija za decu,{" "}
             <br
               className="
@@ -25,29 +25,29 @@ export default function Home() {
             njihove porodice.
           </p>
           <Link href={"/O_meni"}>
-            <h1 className="text-lg pt-10 italic  md:text-2xl lg:text-3xl lg:py-10  ">
+            <h1 className="text-lg pt-10 italic  md:text-xl lg:text-2xl lg:py-10  ">
               <span>Dipl. Psiholog </span>Smilja Igic
             </h1>
           </Link>
         </div>
 
-        <div className=" lg:flex lg:justify-between pb-10">
+        <div className=" lg:flex lg:justify-between pb-10  border-2 border-foreground  ">
           {/* First Image */}
           <ImageComponent
             src="/Smiljka1.jpg"
             alt="Smilja Igic vas psiholog"
-            className="lg:w-1/3 object-contain"
+            className="lg:w-1/3"
           />
           <div className=" lg:flex lg:flex-col lg:w-1/2 lg:justify-center">
             {" "}
-            <TextComponentHome className="">
-              <span className="font-bold italic text-xl">Razgovor</span> koji
+            <TextComponentHome className="border-2">
+              <span className="font-bold italic">Razgovor</span> koji
               otvara perspektive, pokreće i ohrabruje na rešavanje problema je
               potreban savremenom čoveku kako bi uspešno prevladao svakodnevne
               izazove života.
             </TextComponentHome>
             <TextComponentHome className="">
-              <span className="font-bold italic text-xl "> Uloge</span> koje
+              <span className="font-bold italic"> Uloge</span> koje
               živimo (roditeljstvo, detinjstvo, partnerstvo, profesionalne
               pozicije...), nameću očekivanja koja mogu biti u neskladu sa
               ličnom prirodom i kreativnim razvojem identiteta.
@@ -56,15 +56,15 @@ export default function Home() {
         </div>
 
         {/* Second Image */}
-        <div className="lg:flex flex-row-reverse lg:lg:justify-between pb-10">
+        <div className="lg:flex flex-row-reverse lg:lg:justify-between pb-10 border-2 border-foreground">
           <ImageComponent
-            src="/Smiljka3.jpg"
+            src="/Smiljka4.jpg"
             alt="Smilja Igic vas psiholog"
-            className="lg:w-1/3 object-contain"
+            className="lg:w-1/3 "
           />
           <div className=" lg:flex flex-col lg:w-1/2 justify-center">
             <TextComponentHome>
-              <span className="font-bold italic">Ljubav, sreća, uspeh</span> su
+              <span className="font-bold italic ">Ljubav, sreća, uspeh</span> su
               samo neki od ključnih pojmova života kojima ljudi pridaju
               značenje, a koji duboko određuju osećaj ostvarenosti i
               zadovljstva.

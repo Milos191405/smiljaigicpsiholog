@@ -1,0 +1,172 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Prilagođavanje deteta na vrtić",
+      "subtitle": "6 saveta za dobar početak",
+      "subtitles": [
+      {
+      "id": 1,
+      "subtitle": "Razgovor, poseta i upoznavanje sa okruženjem",
+      "content": "Pre nego što dete krene u vrtić, korisno je da ga upoznate sa novim okruženjem. Posetite vrtić najpre sami kako biste stekli uvid u prostor, način rada i osoblje. Zatim povedite i dete kako bi se postepeno priviklo na prostor i atmosferu. Posmatranje dece u dvorištu vrtića može mu pomoći da shvati da je to mesto za igru i druženje."
+      },
+      {
+      "id": 2,
+      "subtitle": "Dogovor na radnom mestu",
+      "content": "Period prilagođavanja može biti izazovan, pa je važno unapred razgovarati sa nadređenima i kolegama o mogućnosti fleksibilnog radnog vremena ili korišćenja godišnjeg odmora. To će vam omogućiti da budete prisutni u prvim danima boravka deteta u vrtiću i pružite mu potrebnu podršku."
+      },
+      {
+      "id": 3,
+      "subtitle": "Pričajte o vrtiću kod kuće",
+      "content": "Dete će lakše prihvatiti vrtić ako o njemu govorite sa entuzijazmom i pozitivnim tonom. Priče o novim drugarima, igrama i zanimljivim aktivnostima mogu pomoći da dete poveže vrtić sa prijatnim emocijama, smanjujući strah od nepoznatog."
+      },
+      {
+      "id": 4,
+      "subtitle": "Bliskost sa osobljem i drugom decom",
+      "content": "Kako bi se dete osećalo sigurnije, može biti korisno da kod kuće ima fotografiju sa vaspitačima i decom ili da čuva crtež ili predmet koji je napravilo u vrtiću. Ovi mali simboli povezanosti mogu mu pomoći da se lakše prilagodi."
+      },
+      {
+      "id": 5,
+      "subtitle": "Prilagođavanje zahteva vreme",
+      "content": "Svako dete se prilagođava različitim tempom. Neka deca se brzo uklope, dok drugima treba više vremena. Važno je ne praviti poređenja sa drugom decom i pružiti svom detetu dovoljno podrške i strpljenja."
+      },
+      {
+      "id": 6,
+      "subtitle": "Rastanci i pozdravi",
+      "content": "Jasno i smireno pozdravljanje pri rastanku može olakšati prilagođavanje. Umesto dugih i emotivnih oproštaja, recite detetu da odlazite, mahnete mu i osmehnite se. Na taj način ćete mu uliti sigurnost i pokazati mu da je vrtić bezbedno i prijatno mesto."
+      }
+      ]
+      },
+    {
+      "id": 2,
+      "title": "Trauma kod dece i oporavak",
+      "subtitle" :"psihoterapijska praksa",
+      "subtitles": [
+        {
+          "id": 1,
+          "subtitle": "Uvod",
+          "content": "Savremena istraživanja u razvijenim zemljama pokazuju da su više od dve trećine dece imala bar jedan traumatični događaj u životu pre svoje 16. godine. Praksa ukazuje da je na našim prostorima ovaj procenat možda i veći."
+        },
+        {
+          "id": 2,
+          "subtitle": "Definicija kompleksne traume",
+          "content": "Kompleksnu traumu određuju reakcije na ponavljajuća iskustva iz detinjstva koja su visoko stresna za dete. Najčešći simptomi kompleksne traume su teškoće u regulaciji emocija, poremećaji pažnje, teškoće u interpersonalnim odnosima."
+        },
+        {
+          "id": 3,
+          "subtitle": "Uloga roditelja",
+          "content": "Roditelji imaju veliku odgovornost za razvoj kompleksne traume kod deteta, bilo direktnim izlaganjem deteta traumatskom iskustvu ili nedovoljnim i neadekvatnim angažovanjem u zaštiti deteta."
+        },
+        {
+          "id": 4,
+          "subtitle": "Model terapije",
+          "content": "U tekstu je kroz prikaz tri slučaja iz psihoterapijske prakse predstavljen jedan model rada sa traumom kod dece."
+        },
+        {
+          "id": 5,
+          "subtitle": "Faze tretmana",
+          "content": "Tretman prati osnovne faze oporavka od traume i obavezno uključuje roditelje."
+        },
+        {
+          "id": 6,
+          "subtitle": "Pristupi terapiji",
+          "content": [
+            "Dijalektičko bihejvioralna terapija",
+            "Kognitivna terapija",
+            "Sistemski-porodična terapija"
+          ]
+        },
+        {
+          "id": 7,
+          "subtitle": "Obrazovni elementi",
+          "content": [
+            "Neurobiološka teorija razvoja mozga i traume",
+            "Teorija emocionalnog vezivanja"
+          ]
+        },
+        {
+          "id": 8,
+          "subtitle": "Zaključak",
+          "content": "Na efikasnost tretmana u velikoj meri utiče pravovremeno započinjanje. Zaključak teksta naglašava neophodnost sistemskog uvođenja treninga za prepoznavanje simptoma kompleksne traume kod deteta i razvoj veština traume-svesne nege."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Polazak deteta u skolu",
+      "subtitle" :"6 preporuka za roditelje",
+      "subtitles": [
+        {
+          "id": 1,
+          "subtitle": "Učinite prvi dan polaska u školu svečanim danom u Vašoj porodici",
+          "content": "To je značajna prekretnica u životu deteta i cele porodice. Promene mogu biti zahtevne, pa je važno pripremiti dete i učiniti da se raduje tom danu."
+        },
+        {
+          "id": 2,
+          "subtitle": "Naučite dete da bude samostalno",
+          "content": "U školi deca imaju manje pomoći odraslih nego u vrtiću. Korisno je da dete nauči osnovne veštine samostalnosti, poput oblačenja, vezivanja pertli i čekanja na red."
+        },
+        {
+          "id": 3,
+          "subtitle": "Sarađujte sa školom",
+          "content": "Pozitivan stav roditelja prema školi pomaže detetu da lakše prihvati izazove. Ako imate pitanja ili nezadovoljstva, obratite se direktno zaposlenima u školi."
+        },
+        {
+          "id": 4,
+          "subtitle": "Pomozite detetu da stekne prijatelje",
+          "content": "Ako dete ne poznaje drugu decu u školi, pomozite mu da se sprijatelji. Možete organizovati druženja ili igre sa decom iz razreda kako bi se lakše uklopilo."
+        },
+        {
+          "id": 5,
+          "subtitle": "Upoznajte roditelje dece s kojima se vaše dete druži",
+          "content": "Redovno prisustvujte roditeljskim sastancima i učestvujte u školskim aktivnostima. Time detetu pokazujete da vam je važno njegovo okruženje i prijatelji."
+        },
+        {
+          "id": 6,
+          "subtitle": "Uključite dete u slobodne aktivnosti koje ne upućuju isključivo na decu iz odeljenja",
+          "content": "Ako dete naiđe na problem u školi, korisno je da ima prijatelje i izvan razreda, na primer kroz sportske ili muzičke aktivnosti."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Deca, porodično nasilje i psihoterapija",
+      "subtitle" :"",
+      "subtitles": [
+        {
+          "id": 1,
+          "subtitle": "Uvod",
+          "content": "Porodično nasilje, nažalost, sve češće postaje tema medijskih izveštaja i razgovora u našem okruženju. Tragični slučajevi podsećaju nas na ozbiljnost ovog problema i potrebu za jačanjem svesti i podrške žrtvama. Razumevanje uzroka, posledica i mogućih rešenja ključni su koraci u borbi protiv nasilja u porodici."
+        },
+        {
+          "id": 2,
+          "subtitle": "Razlozi ostanka u nasilnoj vezi",
+          "content": "Mnoge žene ostaju u nasilnim partnerskim odnosima zbog niza razloga, među kojima su najčešći: nedostatak podrške, ekonomska zavisnost i psihološki pritisak. Strah, sramota, osećaj bespomoćnosti i manipulacija često ih sprečavaju da potraže pomoć. Društvo neretko ne prepoznaje njihove potrebe, što dodatno otežava izlazak iz toksičnog odnosa."
+        },
+        {
+          "id": 3,
+          "subtitle": "Deca kao svedoci nasilja",
+          "content": "Kada nasilje postane deo porodičnog okruženja, deca nisu samo pasivni posmatrači – ona su direktne žrtve. Život u takvom ambijentu ostavlja dugoročne posledice na njihovu emocionalnu stabilnost, samopouzdanje i buduće odnose. Istraživanja pokazuju da su deca koja odrastaju u nasilnim domovima pod većim rizikom da i sama postanu žrtve ili počinioci nasilja u odrasloj dobi."
+        },
+        {
+          "id": 4,
+          "subtitle": "Emocionalne posledice na decu",
+          "content": "Deca osećaju nasilje čak i kada ga ne razumeju u potpunosti. U prepubertetskom periodu često razvijaju osećaj krivice, verujući da su oni uzrok sukoba između roditelja. Ovakvi stresni događaji mogu dovesti do problema sa samopouzdanjem, anksioznosti, depresije i teškoća u socijalizaciji."
+        },
+        {
+          "id": 5,
+          "subtitle": "Generacijsko prenošenje nasilja",
+          "content": "Nasilje se često prenosi iz generacije u generaciju. Deca koja odrastaju u nasilnim domovima uče nasilje kao oblik komunikacije i rešavanja sukoba. Bez adekvatne podrške i edukacije, postoji velika verovatnoća da će nastaviti ovaj obrazac u svojim budućim vezama."
+        },
+        {
+          "id": 6,
+          "subtitle": "Psihoterapija i izlaz iz nasilja",
+          "content": "Izlazak iz nasilne veze zahteva hrabrost, ali i sistemsku podršku. Psihoterapija može imati pozitivan efekat samo ako se nasilje zaustavi i ako svaki član porodice dobije adekvatan tretman. Sigurne kuće, savetovališta i organizacije koje pružaju pravnu i emocionalnu podršku mogu igrati ključnu ulogu u osnaživanju žrtava da pronađu put ka sigurnijem i srećnijem životu."
+        },
+        {
+          "content": "Borba protiv porodičnog nasilja nije samo odgovornost žrtava – to je odgovornost celog društva. Edukacijom, empatijom i podrškom možemo zajedno stvoriti svet u kojem je nasilje neprihvatljivo, a sigurnost i ljubav osnovni temelji porodičnih odnosa."
+        }
+      ]
+    }
+  ]
+}

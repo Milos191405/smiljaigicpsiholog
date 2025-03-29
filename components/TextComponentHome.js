@@ -1,6 +1,6 @@
 function TextComponentHome({ children, className }) {
     return (
-      <section className={`text-lg p-4 md:text-xl md:py-6 lg:py-10 ${className}`}>
+      <section className={`p-4 md:text-lg md:py-6 lg:py-10 lg:text-xl ${className}`}>
         {children}
       </section>
     );

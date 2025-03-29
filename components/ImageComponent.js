@@ -7,9 +7,9 @@ const ImageSection = ({ src, alt, className }) => (
         alt={alt}
         width={3000}
         height={1000}
-        className="object-contain bg-[#164e4e] p-5"
+        className="p-4 "
       />
     </div>
   );
   
-  export default ImageSection;
+  export default ImageSection
