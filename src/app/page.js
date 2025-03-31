@@ -4,8 +4,9 @@ import ImageComponent from "@/components/ImageComponent";
 import TextComponentHome from "@/components/TextComponentHome";
 import Link from "next/link";
 
-import "@fortawesome/fontawesome-svg-core/styles.css"; // Import FontAwesome styles globally
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import RandomQuote from "@/components/RandomQuote";
 config.autoAddCss = false; // Prevent automatic addition of CSS
 
 export default function Home() {
@@ -25,13 +26,15 @@ export default function Home() {
             njihove porodice.
           </p>
           <Link href={"/O_meni"}>
-            <h1 className="text-lg pt-10 italic  md:text-xl lg:text-2xl lg:py-10  ">
+            <h1 className="text-lg pt-5 italic font-semibold  md:text-xl lg:text-2xl lg:py-10  ">
               <span>Dipl. Psiholog </span>Smilja Igic
             </h1>
           </Link>
         </div>
 
-        <div className=" lg:flex lg:justify-between pb-10  border-2 border-foreground  ">
+        <RandomQuote />
+
+        <div className=" lg:flex lg:justify-between pb-10    ">
           {/* First Image */}
           <ImageComponent
             src="/Smiljka1.jpg"
@@ -40,7 +43,7 @@ export default function Home() {
           />
           <div className=" lg:flex lg:flex-col lg:w-1/2 lg:justify-center">
             {" "}
-            <TextComponentHome className="border-2">
+            <TextComponentHome className="">
               <span className="font-bold italic">Razgovor</span> koji
               otvara perspektive, pokreće i ohrabruje na rešavanje problema je
               potreban savremenom čoveku kako bi uspešno prevladao svakodnevne
@@ -56,7 +59,7 @@ export default function Home() {
         </div>
 
         {/* Second Image */}
-        <div className="lg:flex flex-row-reverse lg:lg:justify-between pb-10 border-2 border-foreground">
+        <div className="lg:flex flex-row-reverse lg:lg:justify-between pb-10">
           <ImageComponent
             src="/Smiljka4.jpg"
             alt="Smilja Igic vas psiholog"

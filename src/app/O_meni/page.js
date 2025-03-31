@@ -1,12 +1,38 @@
+'use client';
+
+import { useState, useEffect } from "react";
+
 import ImageComponent from "@/components/ImageComponent";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import quotes from "@/src/data/quotes.json"; 
+
 function O_meni() {
+  const [randomQuote, setRandomQuote] = useState("");
+  
+    
+    const getRandomQuote = () => {
+      if (quotes.length > 0) {
+        return quotes[Math.floor(Math.random() * quotes.length)];
+      }
+      return "Psihoterapija je put do samorazumevanja.";
+    };
+  
+  
+    useEffect(() => {
+      setRandomQuote(getRandomQuote());
+    }, []);
   return (
     <>
       <Navbar />
       <article className="pt-20 md:max-w-[700px] md:mx-auto lg:pt-24 lg:max-w-[1000px] xl:max-w-[1500px]">
+
+      <div className="p-4 text-center">
+        <p className=" italic font-semibold">"{randomQuote.text}"</p>
+        <p className="italic ">{randomQuote.author}</p>
+        </div>
+
         <h2 className="text-lg italic text-center font-bold pb-8 md:text-xl lg:text-2xl md:pt-10">
           Smilja Igic
         </h2>
