@@ -43,7 +43,7 @@ function Kontakt() {
             value={formData.firstname}
             onChange={handleChange}
             placeholder="Unesite vaše ime..."
-            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-foreground"
             required
           />
 
@@ -57,7 +57,7 @@ function Kontakt() {
             value={formData.lastname}
             onChange={handleChange}
             placeholder="Unesite vaše prezime..."
-            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-foreground rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-foreground"
             required
           />
 
@@ -70,7 +70,7 @@ function Kontakt() {
             value={formData.subject}
             onChange={handleChange}
             placeholder="Recite mi šta vas muči..."
-            className="border border-gray-300 rounded-md p-2 h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-foreground rounded-md p-2 h-32 focus:outline-none focus:ring-2 focus:ring-foreground"
             required
           ></textarea>
 
