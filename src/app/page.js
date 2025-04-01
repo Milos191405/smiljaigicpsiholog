@@ -97,8 +97,8 @@ export default function Home() {
       {/* Testimonials Section */}
       <section className="py-20 px-6 lg:px-20 bg-white text-center">
         <h2 className="text-3xl font-semibold text-gray-800">Šta kažu klijenti?</h2>
-        <p className="mt-6 text-gray-600 italic text-lg">"Smilja nam je pomogla da ponovo pronađemo mir i razumevanje u porodici."</p>
-        <p className="mt-4 text-gray-600 italic text-lg">"Njena empatija i stručnost učinili su veliku razliku u našem životu."</p>
+        <p className="mt-6 text-gray-600 italic text-lg">&quot;Smilja nam je pomogla da ponovo pronađemo mir i razumevanje u porodici.&quot;</p>
+        <p className="mt-4 text-gray-600 italic text-lg">&quot;Njena empatija i stručnost učinili su veliku razliku u našem životu.&quot;</p>
       </section>
 
       {/* Contact Section */}
