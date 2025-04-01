@@ -31,7 +31,7 @@ function Kontakt() {
 
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col space-y-4 p-4 border border-foreground rounded-lg shadow-md text-foreground bg-background"
+          className="flex flex-col space-y-4 p-4 border border-foreground rounded-lg shadow-md text-foreground bg-background "
         >
           <label htmlFor="firstname" className="font-medium">
             Ime
@@ -43,7 +43,7 @@ function Kontakt() {
             value={formData.firstname}
             onChange={handleChange}
             placeholder="Unesite vaše ime..."
-            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-foreground"
+            className="border border-foreground rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-foreground"
             required
           />
 
@@ -76,7 +76,7 @@ function Kontakt() {
 
           <button
             type="submit"
-            className="bg-foreground text-background font-semibold py-2 rounded-md hover:text-orange-300 transition duration-300"
+            className="bg-foreground text-background font-semibold py-2 rounded-md hover:text-orange-300 transition duration-300 w-2/3 mx-auto"
           >
             Pošalji
           </button>

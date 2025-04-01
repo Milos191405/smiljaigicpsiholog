@@ -3,8 +3,11 @@
 :root {
   --background: #fffcf7;
   --background-secondary: #e8d7d2;
+  --background-ternary: #254041;
   --text-primary: #1d3140;
   --text-secondary: #a5514f;
+  --text-ternary: #a04e48;
+ 
   --font-sans: "Raleway", sans-serif;
   --font-mono: "Geist Mono", monospace;
   
@@ -20,8 +23,10 @@ body {
 @theme {
   --color-background: var(--background);
   --color-background-secondary: var(--background-secondary);
+  --color-background-ternary: var(--background-ternary);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
+  --color-text-ternary: var(--text-ternary);
   --color-primary-bg: var(--primary-bg);
   --color-secondary-bg: var(--secondary-bg);
   --color-ternary-bg: var(--ternary-bg);

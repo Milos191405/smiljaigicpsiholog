@@ -26,7 +26,7 @@ export default function Navbar() {
       setPrevScrollPos(currentScrollPos);
 
       // Show/hide scroll-to-top button
-      setShowScrollToTop(currentScrollPos > 300); // Show when scrolled 300px down
+      setShowScrollToTop(currentScrollPos > 10); // Show when scrolled 300px down
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* Logo always on center */}
           <Link
             href="/"
-            className="text-2xl font-bold transition-all duration-300 md:text-3xl lg:text-2xl hover:text-orange-300"
+            className="text-2xl font-bold transition-all duration-300 md:text-3xl lg:text-2xl hover:text-text-secondary"
           >
             Porodični terapeut
           </Link>
@@ -71,7 +71,7 @@ export default function Navbar() {
         <ul className="hidden lg:flex justify-between gap-6 text-lg lg:text-xl">
           {navLinks.map(({ to, label }) => (
             <li key={to}>
-              <Link href={to} className="hover:text-orange-300">
+              <Link href={to} className="hover:text-text-secondary">
                 {label}
               </Link>
             </li>
@@ -79,7 +79,7 @@ export default function Navbar() {
         </ul>
 
         <Link href="/Kontakt" className="hidden lg:flex">
-          <button className="border p-2 text-background rounded-xl bg-foreground hover:text-orange-300 hover:border-foreground">
+          <button className="border p-2  text-background bg-text-secondary rounded-xl  hover:text-text-primary hover:bg-background">
             Kontakt
           </button>
         </Link>
@@ -104,19 +104,19 @@ export default function Navbar() {
           </button>
 
           {/* Mobile Menu Links */}
-          <ul className="flex flex-col gap-6 text-2xl text-foreground mt-auto mb-auto">
+          <ul className="flex flex-col gap-6 text-xl text-foreground mt-auto mb-auto">
             {navLinks.map(({ to, label }) => (
               <li key={to} onClick={() => setNav(false)}>
-                <Link href={to} className="hover:text-red-500">
+                <Link href={to} className="hover:text-text-secondary">
                   {label}
                 </Link>
               </li>
             ))}
 
             {/* "Kontakt" Button - Only on Mobile */}
-            <li className="lg:hidden mt-6" onClick={() => setNav(false)}>
+            <li className="lg:hidden " onClick={() => setNav(false)}>
               <Link href="/Kontakt">
-                <button className="border p-2 text-background rounded-xl bg-foreground hover:text-orange-300 hover:border-foreground">
+                <button className="border p-2 text-text-secondary rounded-2xl bg-background-secondary hover:text-text-primary hover:border-text-primary">
                   Kontakt
                 </button>
               </Link>
