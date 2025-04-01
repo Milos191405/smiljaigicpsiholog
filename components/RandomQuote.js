@@ -18,10 +18,10 @@ function RandomQuote() {
   if (!randomQuote) return null;
 
   return (
-    <div className="p-4 text-center">
-      <p className="italic font-semibold">{`"${randomQuote.text}"`}</p>
+    <div className="p-4 py-10 text-center">
+      <p className=" text-lg italic font-semibold pb-4">{`"${randomQuote.text}"`}</p>
       {randomQuote.author && randomQuote.author !== "Nepoznati autor" && (
-        <p className="italic">{randomQuote.author}</p>
+        <p className="text-lg italic">{randomQuote.author}</p>
       )}
     </div>
   );

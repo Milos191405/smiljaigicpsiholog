@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import RandomQuote from "@/components/RandomQuote";
+import Button from "@/components/Button";
 
 export default function Home() {
   return (
@@ -18,16 +19,18 @@ export default function Home() {
             <h1 className="text-4xl lg:text-2xl font-semibold leading-tight">
               Terapija za decu, tinejdžere i njihove porodice
             </h1>
-            <p className="mt-6 text-lg text-text-secondary">
+            <p className="my-6 text-lg text-text-secondary">
               Pronađite podršku i razumevanje kroz stručni pristup.
             </p>
-            <Link
+
+            {/* Button for scheduling consultation */}
+            <Button
               href="/Kontakt"
-              className="mt-6 inline-block bg-text-primary text-white px-8 py-4 text-lg rounded-full shadow-lg hover:bg-blue-700 transition"
-            >
-              Zakaži konsultaciju
-            </Link>
+              text="Zakaži konsultaciju"
+              styleType="consultation"
+            />
           </div>
+
           <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-end">
             {/* Hero Image */}
             <Image
@@ -76,6 +79,7 @@ export default function Home() {
             <Link href="/Psihoterapija">Kako mogu pomoći?</Link>
           </h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+            {/* Service Cards */}
             <div className="p-8 bg-background-ternary text-background shadow-xl rounded-lg">
               <h3 className="text-2xl font-bold">Psihološko savetovanje</h3>
               <p className="mt-4">Individualni pristup i profesionalna podrška u prevazilaženju životnih izazova.</p>
@@ -95,19 +99,23 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-6 lg:px-20 bg-white text-center">
+      {/* <section className="py-20 px-6 lg:px-20 bg-white text-center">
         <h2 className="text-3xl font-semibold text-gray-800">Šta kažu klijenti?</h2>
         <p className="mt-6 text-gray-600 italic text-lg">&quot;Smilja nam je pomogla da ponovo pronađemo mir i razumevanje u porodici.&quot;</p>
         <p className="mt-4 text-gray-600 italic text-lg">&quot;Njena empatija i stručnost učinili su veliku razliku u našem životu.&quot;</p>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
-      <section className="py-20 bg-gray-100 px-6 lg:px-20 text-center">
-        <h2 className="text-3xl font-semibold text-gray-800">Kontaktirajte me</h2>
-        <p className="mt-6 text-gray-600 text-lg">Spremni da napravite prvi korak? Pošaljite poruku ili zakažite konsultaciju.</p>
-        <Link href="/kontakt" className="mt-8 inline-block bg-blue-600 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:bg-blue-700 transition">
-          Pošaljite poruku
-        </Link>
+      <section className="py-20 bg-text-primary text-background  px-6 lg:px-20 text-center">
+        <h2 className="text-3xl font-semibold ">Kontaktirajte me</h2>
+        <p className="mt-6 mb-6  text-lg">Spremni da napravite prvi korak? Pošaljite poruku ili zakažite konsultaciju.</p>
+        
+        {/* Button for sending message */}
+        <Button
+          href="/kontakt"
+          text="Pošaljite poruku"
+          styleType="message"
+        />
       </section>
 
       <Footer />
