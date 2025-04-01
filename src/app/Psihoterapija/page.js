@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import ImageComponent from "@/components/ImageComponent";
 import RandomQuote from "@/components/RandomQuote";
+import Footer from "@/components/Footer";
 
 
 function Psihoterapija() {
@@ -55,6 +56,7 @@ function Psihoterapija() {
           </ul>
         </div>
       </article>
+      <Footer />
     </>
   );
 }

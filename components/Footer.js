@@ -11,11 +11,11 @@ function Footer() {
       
       <div className="">
    
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/smilja-igi%C4%87-16734866/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} className="text-foreground hover:text-blue-500 transition-all duration-300 text-2xl" />
         </a>
 
-        <a href="mailto:example@com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:gajins@yahoo.com" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faEnvelope} className="text-foreground-700 ml-4 text-2xl hover:text-gray-500 transition-all duration-300" />
         </a>
 

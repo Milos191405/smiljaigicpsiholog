@@ -1,39 +1,31 @@
 @import "tailwindcss";
 
-
 :root {
-  --background: #fdfbf6;
-  --foreground: #164e4e;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: #fffcf7;
+  --background-secondary: #e8d7d2;
+  --text-primary: #1d3140;
+  --text-secondary: #a5514f;
+  --font-sans: "Raleway", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  
+ 
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  font-family: var(--font-sans); 
 }
 
 @theme {
-  --font-display: "Geist", "sans-serif";
-  --font-display--font-feature-settings: "cv02", "cv03", "cv04", "cv11"; 
-  --font-display--font-variation-settings: "opsz" 32; 
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-primary-bg: var(--primary-bg);
+  --color-secondary-bg: var(--secondary-bg);
+  --color-ternary-bg: var(--ternary-bg);
+  --font-display: "Raleway", sans-serif;
+  --font-display--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  --font-display--font-variation-settings: "opsz" 32;
 }
-
-/* primary bg #71cd7d
-secondary bg #6cbb9d
-ternary bg #66a8bc */
