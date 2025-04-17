@@ -7,7 +7,7 @@ const ImageSection = ({ src, alt, className }) => (
         alt={alt}
         width={3000}
         height={1000}
-        className="p-4 "
+        className="rounded-4xl shadow-lg"
       />
     </div>
   );
