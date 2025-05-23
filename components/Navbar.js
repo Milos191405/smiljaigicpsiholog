@@ -86,7 +86,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-screen bg-background flex flex-col items-center transition-all duration-500 ease-in-out 
+          className={`h-screen  fixed top-0 left-0 w-full  bg-background flex flex-col items-center transition-all duration-500 ease-in-out 
           ${nav ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}
         `}
         >

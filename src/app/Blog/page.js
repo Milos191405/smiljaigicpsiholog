@@ -30,10 +30,14 @@ export default async function Blog() {
   return (
     <>
       <Navbar />
-      <article className="pt-20">
-        <RandomQuote />
+      <article className="">
+         <div className="pt-[64px] lg:pt-[100px]">
+          <RandomQuote />
+        </div>
 
-        <p className="text-center text-lg  font-bold">Blog</p>
+       <h1 className="italic text-center font-semibold py-4 text-1xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-text-primary">
+          Blog o psihoterapiji i razvoju deteta
+        </h1>
         <ul className="mt-8 space-y-4">
           {posts.map((post) => (
             <li key={post.id} className="text-center">

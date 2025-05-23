@@ -25,10 +25,12 @@ function Kontakt() {
   return (
     <>
       <Navbar />
-      <article className="pt-20 px-4 md:max-w-xl md:mx-auto lg:max-w-2xl">
-        <RandomQuote />
+      <article>
+        <div className="pt-[64px] lg:pt-[100px]">
+          <RandomQuote />
+        </div>
         <h1 className="text-center text-2xl font-bold py-6">Kontakt</h1>
-
+<div  className="pt-20 px-4 md:max-w-xl md:mx-auto lg:max-w-2xl">
         <form
           onSubmit={handleSubmit}
           className="flex flex-col space-y-4 p-4 border border-foreground rounded-lg shadow-md text-foreground bg-background "
@@ -76,11 +78,12 @@ function Kontakt() {
 
           <button
             type="submit"
-            className="bg-foreground text-background font-semibold py-2 rounded-md hover:text-orange-300 transition duration-300 w-2/3 mx-auto"
+            className="bg-text-primary text-background border-2 font-semibold py-2  hover:text-background hover:bg-text-secondary transition duration-300  mx-auto inline-block md:text-lg px-8  rounded-full shadow-lg"
           >
             Pošalji
           </button>
         </form>
+        </div>
       </article>
     </>
   );

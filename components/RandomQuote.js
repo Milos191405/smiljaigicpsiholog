@@ -19,10 +19,10 @@ function RandomQuote() {
 
   return (
     <div className="w-full bg-text-primary text-background ">
-    <div className=" p-4  text-center  md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl  ">
+    <div className=" p-4  text-center text-sm  md:text-sm lg:text-md xl:text-lg 2xl:text-xl  ">
       <p className=" italic font-semibold pb-4">{`"${randomQuote.text}"`}</p>
       {randomQuote.author && randomQuote.author !== "Nepoznati autor" && (
-        <p className=" italic text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">{randomQuote.author}</p>
+        <p className=" italic text-sm md:text-sm lg:text-md xl:text-lg 2xl:text-xl">{randomQuote.author}</p>
       )}
     </div>
     </div>

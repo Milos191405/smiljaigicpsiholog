@@ -5,8 +5,8 @@ const ImageSection = ({ src, alt, className }) => (
       <Image
         src={src}
         alt={alt}
-        width={3000}
-        height={1000}
+        width={1000}
+        height={800}
         className="rounded-4xl shadow-lg"
       />
     </div>
