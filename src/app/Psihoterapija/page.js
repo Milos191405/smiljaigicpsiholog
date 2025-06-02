@@ -65,17 +65,17 @@ function Psihoterapija() {
         
 
         {/* Glavna sekcija - tekst i slika */}
-   <section className="py-10 px-6 bg-background-secondary">
+   <section className="py-10 px-6 bg-background-secondary ">
   <div
     className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1800px]
-      flex flex-col lg:flex-row items-start justify-center px-6 md:px-0"
+      flex flex-col lg:flex-row items-start justify-center px-6 md:px-0  "
   >
-     <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary mb- lg:hidden mx-auto">
+     <h1 className="text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary lg:hidden mx-auto">
         Psihoterapija 
       </h1> 
       <p className="text-lg md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary mb-6 lg:hidden mx-auto">Put ka ličnoj promeni</p>
     {/* Slika ide prva na velikim ekranima */}
-     <div className="md:w-7/10 lg:w-3/10  lg:mt-0 flex justify-end lg:p-5 ">
+     <div className="md:w-7/10 lg:w-3/10  lg:mt-0 flex justify-end lg:p-5 md:mx-auto">
       <ImageSection
         src="/Smiljka1.jpg"
         width={500}

@@ -47,14 +47,14 @@ export default function Home() {
         {/* Hero Section */}
         <section className="pt-[64px] lg:pt-[100px] bg-background-secondary ">
           <div
-            className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1800px] flex flex-col pt-10 pb-10 lg:flex-row 
+            className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1500px] 2xl:max-w-[1800px] flex flex-col pt-20 pb-10 lg:flex-row 
           items-center justify-center px-6 md:px-0"
           >
-            <div className="lg:w-1/2 text-center lg:text-left lg:p-10">
+            <div className="lg:w-1/2 text-center lg:text-left pb-6 lg:p-10">
               <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold leading-tight">
                 Terapija za decu, tinejdžere i njihove porodice
               </h1>
-              <p className="my-6 text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-text-secondary">
+              <p className="my-6 pb-6 text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl text-text-secondary">
                 Pronađite podršku i razumevanje kroz stručni pristup.
               </p>
               <Button
@@ -63,7 +63,7 @@ export default function Home() {
                 styleType="consultation"
               />
             </div>
-            <div className="md:w-7/10 lg:w-3/10 p-6  mt-10 lg:mt-0 flex justify-end lg:p-5">
+            <div className="md:w-7/10 lg:w-3/10 p-  mt-10 lg:mt-0 flex justify-end lg:p-5">
               <ImageSection
                 src="/Smiljka1.jpg"
                 width={500}

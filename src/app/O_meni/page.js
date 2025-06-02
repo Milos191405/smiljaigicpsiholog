@@ -21,8 +21,8 @@ export default function O_meni() {
           <div className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1800px] flex flex-col pt-10 pb-10 lg:flex-row items-center justify-center px-6 md:px-0">
             
             
-            <div className="lg:w-1/2 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl space-y-4 lg:p-10">
-            <h1 className="italic text-center font-semibold  text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-text-primary pb-5">
+            <div className="lg:w-1/2 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-xl space-y-4 lg:p-10">
+            <h1 className="italic text-center font-semibold  text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-text-primary pb-5 lg:pb-10">
           Smilja Igic
         </h1>
               <p>
@@ -63,7 +63,7 @@ export default function O_meni() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="lg:w-1/2 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl space-y-4 lg:ml-10 mt-10">
+            <div className="lg:w-1/2 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-xl space-y-4 lg:ml-10 mt-10">
               <p>
                 Dugogodišnje iskustvo stekla je kao savetnik na roditeljskom telefonu i dečijoj liniji,
                 pružajući podršku i smernice roditeljima i deci u kriznim situacijama.

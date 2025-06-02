@@ -4,43 +4,45 @@
       "id": 1,
       "title": "Prilagođavanje deteta na vrtić",
       "subtitle": "6 saveta za dobar početak",
+      "image": "/Smiljka1.jpg",
       "subtitles": [
-      {
-      "id": 1,
-      "subtitle": "Razgovor, poseta i upoznavanje sa okruženjem",
-      "content": "Pre nego što dete krene u vrtić, korisno je da ga upoznate sa novim okruženjem. Posetite vrtić najpre sami kako biste stekli uvid u prostor, način rada i osoblje. Zatim povedite i dete kako bi se postepeno priviklo na prostor i atmosferu. Posmatranje dece u dvorištu vrtića može mu pomoći da shvati da je to mesto za igru i druženje."
-      },
-      {
-      "id": 2,
-      "subtitle": "Dogovor na radnom mestu",
-      "content": "Period prilagođavanja može biti izazovan, pa je važno unapred razgovarati sa nadređenima i kolegama o mogućnosti fleksibilnog radnog vremena ili korišćenja godišnjeg odmora. To će vam omogućiti da budete prisutni u prvim danima boravka deteta u vrtiću i pružite mu potrebnu podršku."
-      },
-      {
-      "id": 3,
-      "subtitle": "Pričajte o vrtiću kod kuće",
-      "content": "Dete će lakše prihvatiti vrtić ako o njemu govorite sa entuzijazmom i pozitivnim tonom. Priče o novim drugarima, igrama i zanimljivim aktivnostima mogu pomoći da dete poveže vrtić sa prijatnim emocijama, smanjujući strah od nepoznatog."
-      },
-      {
-      "id": 4,
-      "subtitle": "Bliskost sa osobljem i drugom decom",
-      "content": "Kako bi se dete osećalo sigurnije, može biti korisno da kod kuće ima fotografiju sa vaspitačima i decom ili da čuva crtež ili predmet koji je napravilo u vrtiću. Ovi mali simboli povezanosti mogu mu pomoći da se lakše prilagodi."
-      },
-      {
-      "id": 5,
-      "subtitle": "Prilagođavanje zahteva vreme",
-      "content": "Svako dete se prilagođava različitim tempom. Neka deca se brzo uklope, dok drugima treba više vremena. Važno je ne praviti poređenja sa drugom decom i pružiti svom detetu dovoljno podrške i strpljenja."
-      },
-      {
-      "id": 6,
-      "subtitle": "Rastanci i pozdravi",
-      "content": "Jasno i smireno pozdravljanje pri rastanku može olakšati prilagođavanje. Umesto dugih i emotivnih oproštaja, recite detetu da odlazite, mahnete mu i osmehnite se. Na taj način ćete mu uliti sigurnost i pokazati mu da je vrtić bezbedno i prijatno mesto."
-      }
+        {
+          "id": 1,
+          "subtitle": "Razgovor, poseta i upoznavanje sa okruženjem",
+          "content": "Pre nego što dete krene u vrtić, korisno je da ga upoznate sa novim okruženjem. Posetite vrtić najpre sami kako biste stekli uvid u prostor, način rada i osoblje. Zatim povedite i dete kako bi se postepeno priviklo na prostor i atmosferu. Posmatranje dece u dvorištu vrtića može mu pomoći da shvati da je to mesto za igru i druženje."
+        },
+        {
+          "id": 2,
+          "subtitle": "Dogovor na radnom mestu",
+          "content": "Period prilagođavanja može biti izazovan, pa je važno unapred razgovarati sa nadređenima i kolegama o mogućnosti fleksibilnog radnog vremena ili korišćenja godišnjeg odmora. To će vam omogućiti da budete prisutni u prvim danima boravka deteta u vrtiću i pružite mu potrebnu podršku."
+        },
+        {
+          "id": 3,
+          "subtitle": "Pričajte o vrtiću kod kuće",
+          "content": "Dete će lakše prihvatiti vrtić ako o njemu govorite sa entuzijazmom i pozitivnim tonom. Priče o novim drugarima, igrama i zanimljivim aktivnostima mogu pomoći da dete poveže vrtić sa prijatnim emocijama, smanjujući strah od nepoznatog."
+        },
+        {
+          "id": 4,
+          "subtitle": "Bliskost sa osobljem i drugom decom",
+          "content": "Kako bi se dete osećalo sigurnije, može biti korisno da kod kuće ima fotografiju sa vaspitačima i decom ili da čuva crtež ili predmet koji je napravilo u vrtiću. Ovi mali simboli povezanosti mogu mu pomoći da se lakše prilagodi."
+        },
+        {
+          "id": 5,
+          "subtitle": "Prilagođavanje zahteva vreme",
+          "content": "Svako dete se prilagođava različitim tempom. Neka deca se brzo uklope, dok drugima treba više vremena. Važno je ne praviti poređenja sa drugom decom i pružiti svom detetu dovoljno podrške i strpljenja."
+        },
+        {
+          "id": 6,
+          "subtitle": "Rastanci i pozdravi",
+          "content": "Jasno i smireno pozdravljanje pri rastanku može olakšati prilagođavanje. Umesto dugih i emotivnih oproštaja, recite detetu da odlazite, mahnete mu i osmehnite se. Na taj način ćete mu uliti sigurnost i pokazati mu da je vrtić bezbedno i prijatno mesto."
+        }
       ]
-      },
+    },
     {
       "id": 2,
       "title": "Trauma kod dece i oporavak",
-      "subtitle" :"psihoterapijska praksa",
+      "subtitle": "psihoterapijska praksa",
+      "image": "/Smiljka1.jpg",
       "subtitles": [
         {
           "id": 1,
@@ -94,7 +96,8 @@
     {
       "id": 3,
       "title": "Polazak deteta u skolu",
-      "subtitle" :"6 preporuka za roditelje",
+      "subtitle": "6 preporuka za roditelje",
+      "image": "/Smiljka1.jpg",
       "subtitles": [
         {
           "id": 1,
@@ -131,7 +134,8 @@
     {
       "id": 4,
       "title": "Deca, porodično nasilje i psihoterapija",
-      "subtitle" :"",
+      "subtitle": "",
+      "image": "/Smiljka1.jpg",
       "subtitles": [
         {
           "id": 1,
@@ -165,6 +169,31 @@
         },
         {
           "content": "Borba protiv porodičnog nasilja nije samo odgovornost žrtava – to je odgovornost celog društva. Edukacijom, empatijom i podrškom možemo zajedno stvoriti svet u kojem je nasilje neprihvatljivo, a sigurnost i ljubav osnovni temelji porodičnih odnosa."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Podsticajno i pozitivno roditeljstvo",
+      "image": "/Smiljka1.jpg",
+      "subtitles": [
+        {
+          "subtitle": "Prihvatanje deteta (toplina)",
+          "content": [
+            "Obezbediti da dete ima doživljaj da je voljeno, bez obzira na okolnosti.",
+            "Pokazivanje ljubavi (delima i rečima).",
+            "Stavljanje sebe u poziciju deteta i razmišljanje o njegovim potrebama i osećanjima.",
+            "Ključni elementi topline su emocionalna podrška i razumevanje."
+          ]
+        },
+        {
+          "subtitle": "Vođenje deteta kroz situacije (struktura)",
+          "content": [
+            "Detetu je potrebno dati jasna uputstva za očekivana, bezbedna i korisna ponašanja.",
+            "Objašnjenje zahteva.",
+            "Pomoć u savladavanju izazova.",
+            "Modelovanje ponašanja i zajedničko rešavanje problema."
+          ]
         }
       ]
     }

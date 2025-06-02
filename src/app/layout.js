@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <body
         className={`antialiased ${raleway.variable} ${geistMono.variable}`} // Add correct font classes
         style={{
-          fontFamily: `var(--font-geist-sans), sans-serif`,
+          fontFamily: `var(--font-sans), sans-serif`,
         }}
       >
         {children}

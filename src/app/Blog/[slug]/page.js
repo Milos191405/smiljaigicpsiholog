@@ -1,10 +1,14 @@
 import Navbar from "@/components/Navbar";
 import path from "path";
 import fs from "fs";
+import Image from "next/image";
 
 // Function to generate slug
 function generateSlug(title) {
-  return title.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]+/g, "");
+  return title
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w-]+/g, "");
 }
 
 // Function to get post by slug
@@ -37,15 +41,33 @@ export default async function BlogPost({ params }) {
   return (
     <>
       <Navbar />
-      <article className="pt-30 px-4">
-        <h1 className="text-center text-lg font-bold">{post.title}</h1>
+      <div className="mt-[60px] bg-background-secondary">
+        <h1 className="text-center text-lg font-bold py-10">{post.title}</h1>
+      </div>
+
+      <article className="pt-10 px-4">
+        <Image
+          src={post.image}
+          alt={post.title}
+          width={600}
+          height={400}
+          className="rounded-xl shadow-md "
+        />
         <div className="mt-6 space-y-4">
           {post.subtitles.map((section, index) => (
             <section key={index}>
-              <h2 className="italic font-semibold">{section.subtitle}</h2>
-              <p className="text-gray-700">
-                {Array.isArray(section.content) ? section.content.join(", ") : section.content}
-              </p>
+              <h2 className="italic font-semibold text-lg pb-3">{section.subtitle}</h2>
+              <div className="text-text-primary primary text-sm pb-5">
+                {Array.isArray(section.content) ? (
+                  <ul className="list-disc list-inside ">
+                    {section.content.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  section.content
+                )}
+              </div>
             </section>
           ))}
         </div>
