@@ -8,6 +8,7 @@ const Button = ({ href, text, styleType }) => {
   const styleVariants = {
     consultation: 'bg-text-primary text-white hover:bg-text-secondary',
     message: ' text-white bg-text-secondary hover:bg-background hover:text-text-primary',
+    blog:" text-background bg-text-primary hover:bg-text-secondary hover:text-white",
   };
 
   return (
