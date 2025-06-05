@@ -41,7 +41,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full bg-background shadow-lg z-50 lg:h-[100px] lg:flex lg:justify-between lg:items-center lg:px-6 transition-transform duration-300 
+        className={`fixed top-0 left-0 w-full bg-background shadow-lg z-50 h-[80px] lg:h-[100px] lg:flex lg:justify-between lg:items-center lg:px-20 transition-transform duration-300 
         ${visible ? "translate-y-0" : "-translate-y-full"}
       `}
       >
@@ -50,9 +50,10 @@ export default function Navbar() {
           {/* Logo always on center */}
           <Link
             href="/"
-            className="text-2xl font-bold transition-all duration-300 md:text-3xl lg:text-2xl hover:text-text-secondary"
+            className="text-2xl font-bold transition-all duration-300 md:text-3xl lg:text-2xl hover:text-text-secondary text-center"
           >
-            Porodični terapeut
+           <h1>Smilja Igic</h1>
+            <p className="text-sm">Vaš Psihoterapeut</p>
           </Link>
 
           {/* Hamburger Icon */}
@@ -91,8 +92,9 @@ export default function Navbar() {
         `}
         >
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold mt-6 md:text-3xl">
-            Porodični terapeut
+          <Link href="/" className="text-2xl font-bold mt-6 md:text-3xl text-center">
+            <h1>Smilja Igic</h1>
+            <p className="text-sm">Vaš Psihoterapeut</p>
           </Link>
 
           {/* Close Button */}

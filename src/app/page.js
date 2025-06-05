@@ -47,7 +47,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="pt-[64px] lg:pt-[100px] bg-background-secondary ">
           <div
-            className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1500px] 2xl:max-w-[1800px] flex flex-col pt-20 pb-10 lg:flex-row 
+            className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1500px] 2xl:max-w-[1800px] flex flex-col  pt-20 pb-10 lg:flex-row 
           items-center justify-center px-6 md:px-0"
           >
             <div className="lg:w-1/2 text-center lg:text-left pb-6 lg:p-10">
@@ -63,7 +63,7 @@ export default function Home() {
                 styleType="consultation"
               />
             </div>
-            <div className="md:w-7/10 lg:w-3/10 p-  mt-10 lg:mt-0 flex justify-end lg:p-5">
+            <div className="md:w-7/10 lg:w-3/10  mt-10 lg:mt-0 flex justify-end lg:p-5">
               <ImageSection
                 src="/Smiljka1.jpg"
                 width={500}
@@ -78,12 +78,12 @@ export default function Home() {
         <RandomQuote className="" />
 
         {/* About Section */}
-        <section className="py-10 px-6 bg-background ">
+        <section className="py-10  bg-background ">
          <div
             className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1800px] flex flex-col pt-10 pb-10 lg:flex-row 
           items-center justify-center px-6 md:px-0 "
           >
-            <div className="md:w-7/10 lg:w-3/10  lg:mt-0 flex justify-end lg:p-5 ">
+            <div className="md:w-7/10 lg:w-3/10  lg:mt-0 flex justify-end lg:p-5">
               <ImageSection
                 src="/Smiljka1.jpg"
                 width={500}

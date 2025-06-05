@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import path from "path";
 import fs from "fs";
-import Image from "next/image";
 import Button from "@/components/Button";
+import ImageSectionCover from "@/components/ImageSectionCover";
 
 // Function to generate slug
 function generateSlug(title) {
@@ -42,25 +42,39 @@ export default async function BlogPost({ params }) {
   return (
     <>
       <Navbar />
-      <div className="mt-[60px] bg-background-secondary">
-        <h1 className="text-center text-xl md:text-2xl font-bold py-10">{post.title}</h1>
+
+      {/* Naslov */}
+      <div className="mt-[80px] lg:mt-[100px] bg-background-secondary">
+        <h1 className="flex items-center justify-center text-center text-xl md:text-2xl font-bold h-[80px] lg:h-[100px]">
+          {post.title}
+        </h1>
       </div>
 
-      <article className="pt-10 px-4">
-        <Image
-          src={post.image}
-          alt={post.title}
-          width={600}
-          height={400}
-          className="rounded-xl shadow-md md:mx-auto "
-        />
-        <div className="mt-6 space-y-4">
+      {/* Glavni sadržaj */}
+      <article className="pt-10 px-4 md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1300px] mx-auto">
+        
+        {/* Sekcija sa slikom */}
+        <section className="mb-10">
+  <div className="relative w-full h-[200px] lg:h-[300px]">
+    <ImageSectionCover
+      src="/Smiljka1.jpg"
+      alt="Terapija"
+      className="w-full h-full"
+    />
+  </div>
+</section>
+
+
+        {/* Sekcije sa podnaslovima */}
+        <section className="space-y-8">
           {post.subtitles.map((section, index) => (
-            <section key={index}>
-              <h2 className="italic font-semibold text-lg md:text-xl pb-3">{section.subtitle}</h2>
-              <div className="text-text-primary primary text-sm md:text-lg pb-5">
+            <div key={index}>
+              <h2 className="italic font-semibold text-lg md:text-xl pb-3">
+                {section.subtitle}
+              </h2>
+              <div className="text-text-primary text-sm md:text-lg pb-5">
                 {Array.isArray(section.content) ? (
-                  <ul className="list-disc list-inside ">
+                  <ul className="list-disc list-inside">
                     {section.content.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}
@@ -69,17 +83,14 @@ export default async function BlogPost({ params }) {
                   section.content
                 )}
               </div>
-            </section>
+            </div>
           ))}
-        </div>
-       <div className="mt-5 text-center pb-10 ">
-          <Button
-                href="/Blog"
-                text="Nazad na blog"
-                styleType="blog"
-               
-              />
-          </div>
+        </section>
+
+        {/* Dugme za povratak */}
+        <section className="mt-10 text-center pb-10">
+          <Button href="/Blog" text="Nazad na blog" styleType="blog" />
+        </section>
       </article>
     </>
   );
