@@ -57,58 +57,61 @@ function Psihoterapija() {
     <>
       <Navbar />
 
-      <article>
+      <main>
         <div className="pt-[64px] lg:pt-[100px]">
           <RandomQuote />
         </div>
 
-        
-
         {/* Glavna sekcija - tekst i slika */}
-   <section className="py-10 px-6 bg-background-secondary ">
-  <div
-    className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1800px]
-      flex flex-col lg:flex-row items-start justify-center px-6 md:px-0  "
-  >
-     <h1 className="text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary lg:hidden mx-auto">
-        Psihoterapija 
-      </h1> 
-      <p className="text-lg md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary mb-6 lg:hidden mx-auto">Put ka ličnoj promeni</p>
-    {/* Slika ide prva na velikim ekranima */}
-     <div className="md:w-7/10 lg:w-3/10  lg:mt-0 flex justify-end lg:p-5 md:mx-auto">
-      <ImageSection
-        src="/Smiljka1.jpg"
-        width={500}
-        height={400}
-        alt="Terapija"
-        className=""
-      />
-    </div>
+        <section className="py-10 px-6 bg-background-secondary">
+          <div
+            className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1800px]
+              flex flex-col lg:flex-row items-start justify-center px-6 md:px-0"
+          >
+            <header className="lg:hidden mx-auto text-center mb-6">
+              <h1 className="text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary">
+                Psihoterapija
+              </h1>
+              <p className="text-lg md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary">
+                Put ka ličnoj promeni
+              </p>
+            </header>
 
-    {/* Ova div grupiše h1 i tekst - na malim ekranima ispod slike, na velikim pored slike */}
-    <div className="lg:w-1/2 mt-10 lg:my-auto">
-      <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary mb-15 hidden lg:block">
-        Psihoterapija – Put ka ličnoj promeni
-      </h1>
-      <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
-        Dobar terapeut ne nudi gotova rešenja. Veruje da znanje i snaga već postoje u osobi koja dolazi na terapiju.
-      </p>
-      <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
-        Kroz pažljivo vođenje i podršku, klijent otkriva sopstvene unutrašnje resurse i sposobnost da prevaziđe životne izazove.
-      </p>
-      <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
-        Sistemski pristup pomaže da promene postignute tokom terapije utiču ne samo na pojedinca, već i na njegove bliske odnose i širu okolinu.
-      </p>
-      <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl">
-        Ovakav pogled omogućava klijentima da sagledaju svoje probleme iz šire perspektive – razumevajući kako obrasci ponašanja i emocije oblikuju njihove odnose i život.
-      </p>
-    </div>
-  </div>
-</section>
+            {/* Slika - na velikim ekranima ide prva */}
+            <div className="md:w-7/10 lg:w-3/10 lg:mt-0 flex justify-end lg:p-5 md:mx-auto">
+              <ImageSection
+                src="/Smiljka1.jpg"
+                width={500}
+                height={400}
+                alt="Terapija"
+              />
+            </div>
 
+            {/* Tekst pored slike na velikim ekranima */}
+            <article className="lg:w-1/2 mt-10 lg:my-auto">
+              <hgroup className="hidden lg:block mb-6">
+                <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary">
+                  Psihoterapija – Put ka ličnoj promeni
+                </h1>
+              </hgroup>
+              <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
+                Dobar terapeut ne nudi gotova rešenja. Veruje da znanje i snaga već postoje u osobi koja dolazi na terapiju.
+              </p>
+              <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
+                Kroz pažljivo vođenje i podršku, klijent otkriva sopstvene unutrašnje resurse i sposobnost da prevaziđe životne izazove.
+              </p>
+              <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
+                Sistemski pristup pomaže da promene postignute tokom terapije utiču ne samo na pojedinca, već i na njegove bliske odnose i širu okolinu.
+              </p>
+              <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl">
+                Ovakav pogled omogućava klijentima da sagledaju svoje probleme iz šire perspektive – razumevajući kako obrasci ponašanja i emocije oblikuju njihove odnose i život.
+              </p>
+            </article>
+          </div>
+        </section>
 
         {/* Kartice za usluge */}
-        <section className="px-6 py-16 bg-text-primary">
+        <section className="px-6 py-16 bg-text-primary" aria-label="Vrste terapeutskih usluga">
           <div className="max-w-7xl mx-auto">
             <p className="pb-10 italic font-semibold text-xl md:text-2xl text-center text-background">
               Vrste terapeutskih usluga koje pružam:
@@ -145,33 +148,25 @@ function Psihoterapija() {
                       const color = colorVariants[colorIndex];
 
                       return (
-                        <div
+                        <article
                           key={`${rowIndex}-${colIndex}`}
                           className={`rounded-2xl p-6 shadow-xl hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 ease-in-out ${color.bg} ${color.text}`}
                         >
-                          <h3 className="text-xl font-semibold mb-3">
-                            {service.title}
-                          </h3>
-                          <p className="text-sm leading-relaxed">
-                            {service.description}
-                          </p>
-                        </div>
+                          <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                          <p className="text-sm leading-relaxed">{service.description}</p>
+                        </article>
                       );
                     })}
                   </div>
                 );
               })}
 
-            <div className="flex justify-center mt-12 ">
-              <Button
-                href="/Kontakt"
-                text="Zakaži konsultaciju"
-                styleType="message"
-              />
+            <div className="flex justify-center mt-12">
+              <Button href="/Kontakt" text="Zakaži konsultaciju" styleType="message" />
             </div>
           </div>
         </section>
-      </article>
+      </main>
 
       <Footer />
     </>

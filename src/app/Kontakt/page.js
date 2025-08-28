@@ -3,90 +3,155 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import RandomQuote from "@/components/RandomQuote";
+import Footer from "@/components/Footer";
 
-function Kontakt() {
+export default function Kontakt() {
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
+    email: "",
     subject: "",
   });
+
+  const [status, setStatus] = useState(null);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Poruka poslata!");
-    setFormData({ firstname: "", lastname: "", subject: "" });
+
+    const formspreeURL = "https://formspree.io/f/xrbkeeaq"; // formspree URL
+
+    try {
+      const response = await fetch(formspreeURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("Poruka je uspešno poslata. Javiću Vam se uskoro.");
+        setFormData({ firstname: "", lastname: "", email: "", subject: "" });
+      } else {
+        setStatus("Došlo je do greške. Molimo pokušajte ponovo.");
+      }
+    } catch {
+      setStatus("Došlo je do greške. Molimo pokušajte ponovo.");
+    }
   };
 
   return (
     <>
       <Navbar />
-      <article>
-        <div className="pt-[64px] lg:pt-[100px]">
+
+      <main className="pt-[80px] lg:pt-[100px]">
+        <section>
           <RandomQuote />
-        </div>
-        <h1 className="text-center text-2xl font-bold py-6">Kontakt</h1>
-<div  className="pt-20 px-4 md:max-w-xl md:mx-auto lg:max-w-2xl">
-        <form
-          onSubmit={handleSubmit}
-          className="flex flex-col space-y-4 p-4 border border-foreground rounded-lg shadow-md text-foreground bg-background "
-        >
-          <label htmlFor="firstname" className="font-medium">
-            Ime
-          </label>
-          <input
-            type="text"
-            id="firstname"
-            name="firstname"
-            value={formData.firstname}
-            onChange={handleChange}
-            placeholder="Unesite vaše ime..."
-            className="border border-foreground rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-foreground"
-            required
-          />
+        </section>
 
-          <label htmlFor="lastname" className="font-medium">
-            Prezime
-          </label>
-          <input
-            type="text"
-            id="lastname"
-            name="lastname"
-            value={formData.lastname}
-            onChange={handleChange}
-            placeholder="Unesite vaše prezime..."
-            className="border border-foreground rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-foreground"
-            required
-          />
+        <section className="bg-background-secondary">
+          <h1 className="text-center text-xl md:text-2xl font-bold py-8">
+            Kontakt
+          </h1>
+        </section>
 
-          <label htmlFor="subject" className="font-medium">
-            Tema
-          </label>
-          <textarea
-            id="subject"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            placeholder="Recite mi šta vas muči..."
-            className="border border-foreground rounded-md p-2 h-32 focus:outline-none focus:ring-2 focus:ring-foreground"
-            required
-          ></textarea>
+        <section className="py-6 px-4 text-center text-lg md:text-xl mx-auto font-semibold">
+          <p>Briga o sebi počinje malim koracima.</p>
+          <p>Ovaj može biti prvi.</p>
+        </section>
 
-          <button
-            type="submit"
-            className="bg-text-primary text-background border-2 font-semibold py-2  hover:text-background hover:bg-text-secondary transition duration-300  mx-auto inline-block md:text-lg px-8  rounded-full shadow-lg"
+        <section className="px-4 pb-10 mx-auto md:w-2/3 lg:w-1/2 xl:w-1/3">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col space-y-4 p-6 border border-foreground rounded-lg shadow-md bg-background text-foreground"
+            aria-label="Kontakt forma"
           >
-            Pošalji
-          </button>
-        </form>
-        </div>
-      </article>
+            <div>
+              <label htmlFor="firstname" className="font-medium block mb-1">
+                Ime
+              </label>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                value={formData.firstname}
+                onChange={handleChange}
+                placeholder="Unesite vaše ime..."
+                className="w-full border border-foreground rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-foreground"
+                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="lastname" className="font-medium block mb-1">
+                Prezime
+              </label>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                value={formData.lastname}
+                onChange={handleChange}
+                placeholder="Unesite vaše prezime..."
+                className="w-full border border-foreground rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-foreground"
+                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="email" className="font-medium block mb-1">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Unesite vašu email adresu..."
+                className="w-full border border-foreground rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-foreground"
+                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="subject" className="font-medium block mb-1">
+                Poruka
+              </label>
+              <textarea
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                placeholder="Recite mi šta vas muči..."
+                className="w-full border border-foreground rounded-md p-2 h-32 focus:outline-none focus:ring-2 focus:ring-foreground"
+                required
+              ></textarea>
+            </div>
+
+            <div className="text-center">
+              <button
+                type="submit"
+                className="bg-text-primary text-background border-2 font-semibold py-2 px-8 rounded-full shadow-lg hover:bg-text-secondary hover:text-background transition duration-300"
+              >
+                Pošalji
+              </button>
+            </div>
+
+            {status && (
+              <p className="mt-4 text-center text-sm font-medium text-muted-foreground">
+                {status}
+              </p>
+            )}
+          </form>
+        </section>
+        <Footer />
+      </main>
     </>
   );
 }
-
-export default Kontakt;

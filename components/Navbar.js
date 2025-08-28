@@ -52,7 +52,7 @@ export default function Navbar() {
             href="/"
             className="text-2xl font-bold transition-all duration-300 md:text-3xl lg:text-2xl hover:text-text-secondary text-center"
           >
-           <h1>Smilja Igic</h1>
+           <h1>Smilja Igić</h1>
             <p className="text-sm">Vaš Psihoterapeut</p>
           </Link>
 
@@ -93,7 +93,7 @@ export default function Navbar() {
         >
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold mt-6 md:text-3xl text-center">
-            <h1>Smilja Igic</h1>
+            <h1>Smilja Igić</h1>
             <p className="text-sm">Vaš Psihoterapeut</p>
           </Link>
 

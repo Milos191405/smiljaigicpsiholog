@@ -4,7 +4,7 @@ import fs from "fs";
 import Button from "@/components/Button";
 import ImageSectionCover from "@/components/ImageSectionCover";
 
-// Function to generate slug
+// Funkcija za generisanje slug-a iz naslova
 function generateSlug(title) {
   return title
     .toLowerCase()
@@ -12,7 +12,7 @@ function generateSlug(title) {
     .replace(/[^\w-]+/g, "");
 }
 
-// Function to get post by slug
+// Funkcija za dobijanje posta po slug-u
 async function getPostBySlug(slug) {
   const postsFilePath = path.join(process.cwd(), "src/data/posts.json");
   const fileContent = fs.readFileSync(postsFilePath, "utf-8");
@@ -21,6 +21,7 @@ async function getPostBySlug(slug) {
   return postsData.find((post) => generateSlug(post.title) === slug);
 }
 
+// Generisanje statičnih parametara za SSG
 export async function generateStaticParams() {
   const postsFilePath = path.join(process.cwd(), "src/data/posts.json");
   const fileContent = fs.readFileSync(postsFilePath, "utf-8");
@@ -36,62 +37,83 @@ export default async function BlogPost({ params }) {
   const post = await getPostBySlug(slug);
 
   if (!post) {
-    return <p className="text-center text-red-600">Post not found.</p>;
+    return (
+      <main className="min-h-screen flex items-center justify-center">
+        <p className="text-center text-red-600 text-xl font-semibold">
+          Post nije pronađen.
+        </p>
+      </main>
+    );
   }
 
   return (
     <>
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
 
-      {/* Naslov */}
-      <div className="mt-[80px] lg:mt-[100px] bg-background-secondary">
-        <h1 className="flex items-center justify-center text-center text-xl md:text-2xl font-bold h-[80px] lg:h-[100px]">
-          {post.title}
-        </h1>
-      </div>
+      <main>
+        {/* Naslov posta */}
+        <section
+          role="banner"
+          className="mt-[80px] lg:mt-[100px] bg-background-secondary"
+          aria-label="Naslov blog posta"
+        >
+          <h1
+            tabIndex={-1}
+            className="flex items-center justify-center text-center text-xl md:text-2xl font-bold h-[80px] lg:h-[100px]"
+          >
+            {post.title}
+          </h1>
+        </section>
 
-      {/* Glavni sadržaj */}
-      <article className="pt-10 px-4 md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1300px] mx-auto">
-        
-        {/* Sekcija sa slikom */}
-        <section className="mb-10">
-  <div className="relative w-full h-[200px] lg:h-[300px]">
-    <ImageSectionCover
-      src="/Smiljka1.jpg"
-      alt="Terapija"
-      className="w-full h-full"
-    />
-  </div>
-</section>
-
-
-        {/* Sekcije sa podnaslovima */}
-        <section className="space-y-8">
-          {post.subtitles.map((section, index) => (
-            <div key={index}>
-              <h2 className="italic font-semibold text-lg md:text-xl pb-3">
-                {section.subtitle}
-              </h2>
-              <div className="text-text-primary text-sm md:text-lg pb-5">
-                {Array.isArray(section.content) ? (
-                  <ul className="list-disc list-inside">
-                    {section.content.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                ) : (
-                  section.content
-                )}
-              </div>
+        {/* Glavni sadržaj */}
+        <article
+          className="pt-10 px-4 md:max-w-[600px] lg:max-w-[800px] xl:max-w-[1000px] 2xl:max-w-[1300px] mx-auto"
+          aria-label={`Članak: ${post.title}`}
+        >
+          {/* Slika naslovne sekcije */}
+          <section className="mb-10" aria-label="Naslovna slika blog posta">
+            <div className="relative w-full h-[200px] lg:h-[300px]">
+              <ImageSectionCover
+                src="/Smiljka1.jpg"
+                alt="Terapija"
+                className="w-full h-full object-cover"
+              />
             </div>
-          ))}
-        </section>
+          </section>
 
-        {/* Dugme za povratak */}
-        <section className="mt-10 text-center pb-10">
-          <Button href="/Blog" text="Nazad na blog" styleType="blog" />
-        </section>
-      </article>
+          {/* Tekstualni podnaslovi i sadržaj */}
+          <section className="space-y-8">
+            {post.subtitles.map((section, index) => (
+              <section key={index} aria-labelledby={`subtitle-${index}`}>
+                <h2
+                  id={`subtitle-${index}`}
+                  className="italic font-semibold text-lg md:text-xl pb-3"
+                >
+                  {section.subtitle}
+                </h2>
+                <div className="text-text-primary text-sm md:text-lg pb-5">
+                  {Array.isArray(section.content) ? (
+                    <ul className="list-disc list-inside">
+                      {section.content.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p>{section.content}</p>
+                  )}
+                </div>
+              </section>
+            ))}
+          </section>
+
+          {/* Dugme za povratak */}
+          <section className="mt-10 text-center pb-10">
+            <Button href="/Blog" text="Nazad na blog" styleType="blog" aria-label="Nazad na listu blog postova" />
+          </section>
+        </article>
+      </main>
     </>
   );
 }
