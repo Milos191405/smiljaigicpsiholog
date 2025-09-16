@@ -1,6 +1,6 @@
 "use client";
 
-import { NextSeo } from "next-seo";
+
 import FadeUp from "@/components/FadeUp";
 import FadeUpStatic from "@/components/FadeUpStatic";
 import Navbar from "@/components/Navbar";
@@ -42,27 +42,7 @@ export default function HomeClient() {
   return (
     <>
      
-      <NextSeo
-        title="Psihološko savetovanje - Smilja Igic"
-       description="Psihološko savetovanje u Beogradu za decu, tinejdžere i porodice. Individualni pristup i profesionalna podrška."
-
-
-        canonical="https://psiholog-smilja-igic.vercel.app/"
-        openGraph={{
-          url: "https://psiholog-smilja-igic.vercel.app/",
-          title: "Psihološko savetovanje - Smilja Igic",
-          description: "Terapija za decu, tinejdžere i porodice sa individualnim pristupom.",
-          images: [
-            {
-              url: "https://psiholog-smilja-igic.vercel.app/Smiljka1.jpg",
-              width: 1200,
-              height: 630,
-              alt: "Smilja Igic - Terapija",
-            },
-          ],
-          site_name: "Smilja Igic",
-        }}
-      />
+     
 
       <header>
         <FadeUpStatic>

@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head />
+      
       <body
         className={`antialiased ${raleway.variable} ${geistMono.variable}`} // Add correct font classes
         style={{

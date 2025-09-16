@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function Footer() {
   return (
     <footer className="text-center space-y-2 border-t-2 border-foreground pt-3">
-      <p>Vaš Psihoterapeut</p>
+      {/* <p>Psiholog i licencirani psihotepeut</p> */}
       <p className="font-semibold">Smilja Igić dipl. psiholog</p>
       
       <div>
