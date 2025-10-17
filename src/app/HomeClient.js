@@ -53,8 +53,8 @@ export default function HomeClient() {
       <main>
         {/* Hero Section */}
         <FadeUp>
-          <section className="pt-[64px] lg:pt-[100px] bg-background-secondary">
-            <div className="mx-auto max-w-screen-xl flex flex-col lg:flex-row items-center justify-center px-6 pt-20 pb-10">
+          <section className="pt-[80px]  lg:pt-[100px] bg-background-secondary">
+            <div className="mx-auto max-w-screen-xl flex flex-col lg:flex-row items-center justify-center px-6 pt-6  pb-10">
               <div className="lg:w-1/2 text-center lg:text-left pb-6 lg:p-10">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
                   Terapija za decu, tinejdžere i njihove porodice
@@ -65,7 +65,7 @@ export default function HomeClient() {
                 <Button href="/Kontakt" text="Zakaži konsultaciju" styleType="consultation" />
               </div>
 
-              <div className="flex justify-end lg:w-1/2 lg:p-5">
+              <div className="mt-2 flex justify-end lg:w-1/2 lg:p-5">
                 <ImageSection
                   src="/Smiljka1.jpg"
                   width={500}

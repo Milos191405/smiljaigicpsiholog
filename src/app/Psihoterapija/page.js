@@ -58,12 +58,12 @@ function Psihoterapija() {
       <Navbar />
 
       <main>
-        <div className="pt-[64px] lg:pt-[100px]">
+        <div className="pt-[80px] lg:pt-[100px]">
           <RandomQuote />
         </div>
 
         {/* Glavna sekcija - tekst i slika */}
-        <section className="py-10 px-6 bg-background-secondary">
+        <section className="py-6 px-6 bg-background-secondary">
           <div
             className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1800px]
               flex flex-col lg:flex-row items-start justify-center px-6 md:px-0"
