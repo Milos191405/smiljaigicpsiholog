@@ -48,7 +48,7 @@ export default function O_meni() {
           </div>
         </section>
 
-        <section aria-label="Inspirativna izreka" className="my-10">
+        <section aria-label="Inspirativna izreka" className="">
           <RandomQuote />
         </section>
 

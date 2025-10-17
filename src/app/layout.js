@@ -23,11 +23,26 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // Ovo filtrira greške iz Chrome ekstenzija i React hydration mismatch
+  if (typeof window !== "undefined") {
+    const originalError = console.error;
+    console.error = (...args) => {
+      if (
+        args.some(
+          a =>
+            typeof a === "string" &&
+            (a.includes("chrome-extension://") || a.includes("hydration"))
+        )
+      ) {
+        return; // Ignoriši ove greške
+      }
+      originalError(...args);
+    };
+  }
+
   return (
     <html lang="en">
-      <body
-        className={`antialiased ${raleway.variable} ${geistMono.variable}`}
-      >
+      <body className={`antialiased ${raleway.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>

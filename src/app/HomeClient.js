@@ -147,7 +147,7 @@ export default function HomeClient() {
               <p className="pt-4 text-lg">Pratite moj rad i kontaktirajte me putem LinkedIn.</p>
               <div className="flex justify-center mt-6">
                 <Button
-                  href="https://www.linkedin.com/in/tvojprofil/"
+                  href="https://www.linkedin.com/in/smilja-igi%C4%87-16734866/"
                   text="LinkedIn"
                   styleType="message"
                 />
