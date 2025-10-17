@@ -1,34 +1,32 @@
-import { Raleway } from 'next/font/google';  // Import the correct font
+import { Raleway } from 'next/font/google';
 import "./globals.css";
 
-// Define font styles
+
 const raleway = Raleway({
-  subsets: ['latin'], // You can add other subsets like 'latin-ext' if needed
-  weights: [100, 300, 400, 500, 600, 700], // Add weights as necessary
-  display: 'swap',  // Add display swap for better rendering
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-sans', 
 });
 
-const geistMono = Raleway({  // Correct the font reference to Raleway, not Railway
+
+const geistMono = Raleway({
   subsets: ['latin'],
-  variable: '--font-geist-mono', // This sets the custom CSS variable
+  weight: ['400', '500', '700'],
   display: 'swap',
+  variable: '--font-geist-mono',
 });
 
 export const metadata = {
   title: "Psiholog Smilja Igic",
-  description: "Psiholog za decu, tinejdzere i njihove porodice",
+  description: "Psiholog za decu, tinejdžere i njihove porodice",
 };
 
-// RootLayout component
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
       <body
-        className={`antialiased ${raleway.variable} ${geistMono.variable}`} // Add correct font classes
-        style={{
-          fontFamily: `var(--font-sans), sans-serif`,
-        }}
+        className={`antialiased ${raleway.variable} ${geistMono.variable}`}
       >
         {children}
       </body>
