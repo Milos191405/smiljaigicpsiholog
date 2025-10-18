@@ -55,9 +55,13 @@ function Footer() {
   </a>
       </div>
 
-      <div className="mt-4 text-sm text-muted-foreground space-y-1">
-        <p>© {new Date().getFullYear()} Smilja Igić. Sva prava zadržana.</p>
-        <p>Izrada sajta: Miloš Mirković</p>
+      <div className="mt-4 text-xs text-muted-foreground space-y-1">
+       <p>© "{new Date().getFullYear()}" Smilja Igić. Sva prava zadržana.</p>
+        <p>Izrada sajta: 
+          <a href="https://portfolio-react-f27q.onrender.com/"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="hover:underline text-foreground">Miloš Mirković</a> </p>
       </div>
     </footer>
   );

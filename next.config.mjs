@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: true, 
   compiler: {
-    removeConsole: process.env.NODE_ENV === "production",
+    removeConsole: process.env.NODE_ENV === "production", 
   },
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, 
   },
   async redirects() {
     return [
@@ -18,7 +18,7 @@ const nextConfig = {
           },
         ],
         destination: 'https://smiljaigicpsiholog.com/:path*',
-        permanent: true, // 301 redirect
+        permanent: true, 
       },
     ];
   },

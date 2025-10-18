@@ -18,9 +18,10 @@ const geistMono = Raleway({
 });
 
 export const metadata = {
-  title: "Psiholog Smilja Igic",
-  description: "Psiholog za decu, tinejdžere i njihove porodice",
+  title: "Psiholog Smilja Igic – Terapija za decu i tinejdžere u Beogradu",
+  description: "Dipl. psiholog Smilja Igic pruža podršku deci, tinejdžerima i porodicama u Beogradu. Individualni i porodični tretmani, profesionalna terapija.",
 };
+
 
 export default function RootLayout({ children }) {
   // Ovo filtrira greške iz Chrome ekstenzija i React hydration mismatch
