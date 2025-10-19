@@ -38,6 +38,7 @@ const sharedDescClass = "mt-4 text-lg md:text-xl lg:text-xl";
 export default function HomeClient() {
   return (
     <>
+      {/* Navbar */}
       <header>
         <FadeUpStatic>
           <Navbar />
@@ -51,7 +52,7 @@ export default function HomeClient() {
             <div className="mx-auto md:max-w-[600px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col pt-10 pb-10 lg:flex-row items-center justify-center px-6 md:px-0">
               {/* Tekst leva strana */}
               <div className="lg:w-2/3 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-xl space-y-4 text-center lg:text-left">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-semibold leading-tight italic text-text-primary pb-5 ">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-semibold leading-tight italic text-text-primary pb-5">
                   Terapija za decu, tinejdžere i njihove porodice
                 </h1>
                 <p className="my-6 md:pb-5 lg:pb-10 text-lg md:text-xl text-text-secondary">
@@ -72,7 +73,7 @@ export default function HomeClient() {
                   height={400}
                   alt="Terapija"
                   className="w-full h-full object-cover"
-                  priority
+                  priority // ključ za LCP
                 />
               </aside>
             </div>
@@ -88,7 +89,7 @@ export default function HomeClient() {
 
         {/* About Section */}
         <FadeUp delay={0.4}>
-          <section className=" lg:pt-10 bg-background">
+          <section className="lg:pt-10 bg-background">
             <div className="mx-auto md:max-w-[600px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col pt-1 pb-10 lg:flex-row items-center justify-center px-6 md:px-0">
               {/* Slika leva strana */}
               <div className="w-3/4 md:w-9/10 lg:w-4/10 mt-10 lg:mt-0 flex justify-end lg:p-5">
@@ -106,9 +107,7 @@ export default function HomeClient() {
                   O meni
                 </h2>
                 <p className="mt-6 text-lg md:text-xl text-text-primary">
-                  Dipl. Psiholog Smilja Igic pruža podršku kroz terapijske
-                  procese, pomažući deci, tinejdžerima i porodicama da prevaziđu
-                  izazove.
+                  Dipl. Psiholog Smilja Igic pruža podršku kroz terapijske procese, pomažući deci, tinejdžerima i porodicama da prevaziđu izazove.
                 </p>
                 <Link
                   href="/O_meni"
@@ -136,21 +135,22 @@ export default function HomeClient() {
 
               <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
                 {cards.map((card, index) => (
-                  <article
-                    key={index}
-                    className={`p-8 shadow-xl rounded-lg ${card.bg} ${card.text}`}
-                  >
-                    <h3 className={sharedTitleClass}>{card.title}</h3>
-                    <p className={sharedDescClass}>{card.description}</p>
-                  </article>
+                  <FadeUp key={index} delay={0.6 + index * 0.2}>
+                    <article
+                      className={`p-8 shadow-xl rounded-lg ${card.bg} ${card.text}`}
+                    >
+                      <h3 className={sharedTitleClass}>{card.title}</h3>
+                      <p className={sharedDescClass}>{card.description}</p>
+                    </article>
+                  </FadeUp>
                 ))}
               </div>
             </div>
           </section>
         </FadeUp>
 
-        {/* Contact CTA samo LinkedIn */}
-        <FadeUp delay={0.8}>
+        {/* Contact CTA */}
+        <FadeUp delay={1}>
           <section className="py-10 bg-text-primary text-background px-6 text-center">
             <div className="max-w-screen-md mx-auto">
               <h3 className="text-2xl lg:text-3xl font-semibold">
@@ -172,7 +172,7 @@ export default function HomeClient() {
       </main>
 
       <footer>
-        <FadeUp delay={1}>
+        <FadeUp delay={1.2}>
           <Footer />
         </FadeUp>
       </footer>
