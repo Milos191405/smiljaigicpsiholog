@@ -8,7 +8,7 @@ const ImageSectionCover = ({ src, alt, className }) => (
       fill
       style={{ objectFit: "cover" }}
       className="rounded-4xl shadow-lg"
-      priority // ako želiš da se slika brzo učitava na stranici
+      priority 
     />
   </div>
 );

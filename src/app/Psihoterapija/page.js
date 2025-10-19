@@ -1,7 +1,11 @@
+"use client";
+
+import FadeUp from "@/components/FadeUp";
+import FadeUpStatic from "@/components/FadeUpStatic";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import ImageSection from "@/components/ImageComponent";
 import RandomQuote from "@/components/RandomQuote";
-import Footer from "@/components/Footer";
 import Button from "@/components/Button";
 
 const services = [
@@ -52,125 +56,125 @@ const services = [
   },
 ];
 
-function Psihoterapija() {
+export default function Psihoterapija() {
   return (
     <>
-      <Navbar />
+      <header>
+        <FadeUpStatic>
+          <Navbar />
+        </FadeUpStatic>
+      </header>
 
       <main>
-        <div className="pt-[80px] lg:pt-[100px]">
-          <RandomQuote />
-        </div>
+        {/* Quote Section */}
+        <FadeUp>
+          <div className="pt-[80px] lg:pt-[100px]">
+            <RandomQuote />
+          </div>
+        </FadeUp>
 
         {/* Glavna sekcija - tekst i slika */}
-        <section className="py-6 px-6 bg-background-secondary">
-          <div
-            className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1800px]
-              flex flex-col lg:flex-row items-start justify-center px-6 md:px-0"
-          >
-            <header className="lg:hidden mx-auto text-center mb-6">
-              <h1 className="text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary">
-                Psihoterapija
-              </h1>
-              <p className="text-lg md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary">
-                Put ka ličnoj promeni
-              </p>
-            </header>
+        <FadeUp delay={0.2}>
+          <section className="py-6 px-6 bg-background-secondary">
+            <div className="mx-auto md:max-w-[600px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col lg:flex-row items-start justify-center px-6 md:px-0">
+              {/* Slika */}
+              <div className="w-3/4 md:w-9/10 lg:w-3/10 lg:mt-0 flex justify-end lg:p-5 md:mx-auto">
+                <ImageSection
+                  src="/Smiljka1.jpg"
+                  width={500}
+                  height={400}
+                  alt="Psihoterapija"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-            {/* Slika - na velikim ekranima ide prva */}
-            <div className="md:w-7/10 lg:w-3/10 lg:mt-0 flex justify-end lg:p-5 md:mx-auto">
-              <ImageSection
-                src="/Smiljka1.jpg"
-                width={500}
-                height={400}
-                alt="Terapija"
-              />
+              {/* Tekst pored slike */}
+              <article className="lg:w-2/3 mt-10 lg:my-auto lg:ml-10">
+                <hgroup className="hidden lg:block mb-6">
+                  <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary">
+                    Psihoterapija – Put ka ličnoj promeni
+                  </h1>
+                </hgroup>
+                <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
+                  Dobar terapeut ne nudi gotova rešenja. Veruje da znanje i snaga već postoje u osobi koja dolazi na terapiju.
+                </p>
+                <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
+                  Kroz pažljivo vođenje i podršku, klijent otkriva sopstvene unutrašnje resurse i sposobnost da prevaziđe životne izazove.
+                </p>
+                <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
+                  Sistemski pristup pomaže da promene postignute tokom terapije utiču ne samo na pojedinca, već i na njegove bliske odnose i širu okolinu.
+                </p>
+                <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl">
+                  Ovakav pogled omogućava klijentima da sagledaju svoje probleme iz šire perspektive – razumevajući kako obrasci ponašanja i emocije oblikuju njihove odnose i život.
+                </p>
+              </article>
             </div>
-
-            {/* Tekst pored slike na velikim ekranima */}
-            <article className="lg:w-1/2 mt-10 lg:my-auto">
-              <hgroup className="hidden lg:block mb-6">
-                <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-semibold text-text-primary">
-                  Psihoterapija – Put ka ličnoj promeni
-                </h1>
-              </hgroup>
-              <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
-                Dobar terapeut ne nudi gotova rešenja. Veruje da znanje i snaga već postoje u osobi koja dolazi na terapiju.
-              </p>
-              <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
-                Kroz pažljivo vođenje i podršku, klijent otkriva sopstvene unutrašnje resurse i sposobnost da prevaziđe životne izazove.
-              </p>
-              <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl mb-4">
-                Sistemski pristup pomaže da promene postignute tokom terapije utiču ne samo na pojedinca, već i na njegove bliske odnose i širu okolinu.
-              </p>
-              <p className="text-msm md:text-md lg:text-lg xl:text-xl 2xl:text-1xl">
-                Ovakav pogled omogućava klijentima da sagledaju svoje probleme iz šire perspektive – razumevajući kako obrasci ponašanja i emocije oblikuju njihove odnose i život.
-              </p>
-            </article>
-          </div>
-        </section>
+          </section>
+        </FadeUp>
 
         {/* Kartice za usluge */}
-        <section className="px-6 py-16 bg-text-primary" aria-label="Vrste terapeutskih usluga">
-          <div className="max-w-7xl mx-auto">
-            <p className="pb-10 italic font-semibold text-xl md:text-2xl text-center text-background">
-              Vrste terapeutskih usluga koje pružam:
-            </p>
+        <FadeUp delay={0.4}>
+          <section className="px-6 py-16 bg-text-primary" aria-label="Vrste terapeutskih usluga">
+            <div className="max-w-7xl mx-auto">
+              <p className="pb-10 italic font-semibold text-xl md:text-2xl text-center text-background">
+                Vrste terapeutskih usluga koje pružam:
+              </p>
 
-            {services
-              .reduce((rows, card, idx) => {
-                const rowIndex = Math.floor(idx / 3);
-                if (!rows[rowIndex]) rows[rowIndex] = [];
-                rows[rowIndex].push(card);
-                return rows;
-              }, [])
-              .map((row, rowIndex) => {
-                // Rotiramo elemente u redu
-                const rotatedRow = [...row];
-                for (let i = 0; i < rowIndex; i++) {
-                  rotatedRow.push(rotatedRow.shift());
-                }
+              {services
+                .reduce((rows, card, idx) => {
+                  const rowIndex = Math.floor(idx / 3);
+                  if (!rows[rowIndex]) rows[rowIndex] = [];
+                  rows[rowIndex].push(card);
+                  return rows;
+                }, [])
+                .map((row, rowIndex) => {
+                  const rotatedRow = [...row];
+                  for (let i = 0; i < rowIndex; i++) {
+                    rotatedRow.push(rotatedRow.shift());
+                  }
 
-                // Definišemo boje koje se rotiraju
-                const colorVariants = [
-                  { bg: "bg-background-ternary", text: "text-background" },
-                  { bg: "bg-text-ternary", text: "text-background-secondary" },
-                  { bg: "bg-background", text: "text-text-primary" },
-                ];
+                  const colorVariants = [
+                    { bg: "bg-background-ternary", text: "text-background" },
+                    { bg: "bg-text-ternary", text: "text-background-secondary" },
+                    { bg: "bg-background", text: "text-text-primary" },
+                  ];
 
-                return (
-                  <div
-                    key={rowIndex}
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8"
-                  >
-                    {rotatedRow.map((service, colIndex) => {
-                      const colorIndex = (colIndex + rowIndex) % 3;
-                      const color = colorVariants[colorIndex];
+                  return (
+                    <div
+                      key={rowIndex}
+                      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8"
+                    >
+                      {rotatedRow.map((service, colIndex) => {
+                        const colorIndex = (colIndex + rowIndex) % 3;
+                        const color = colorVariants[colorIndex];
 
-                      return (
-                        <article
-                          key={`${rowIndex}-${colIndex}`}
-                          className={`rounded-2xl p-6 shadow-xl hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 ease-in-out ${color.bg} ${color.text}`}
-                        >
-                          <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                          <p className="text-sm leading-relaxed">{service.description}</p>
-                        </article>
-                      );
-                    })}
-                  </div>
-                );
-              })}
+                        return (
+                          <article
+                            key={`${rowIndex}-${colIndex}`}
+                            className={`rounded-2xl p-6 shadow-xl hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 ease-in-out ${color.bg} ${color.text}`}
+                          >
+                            <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                            <p className="text-sm leading-relaxed">{service.description}</p>
+                          </article>
+                        );
+                      })}
+                    </div>
+                  );
+                })}
 
-            <div className="flex justify-center mt-12">
-              <Button href="/Kontakt" text="Zakaži konsultaciju" styleType="message" />
+              <div className="flex justify-center mt-12">
+                <Button href="/Kontakt" text="Zakaži konsultaciju" styleType="message" />
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </FadeUp>
       </main>
 
-      <Footer />
+      <footer>
+        <FadeUp delay={0.6}>
+          <Footer />
+        </FadeUp>
+      </footer>
     </>
   );
 }
-
-export default Psihoterapija;
