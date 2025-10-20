@@ -23,7 +23,6 @@ export default function O_meni() {
           </section>
         </FadeUp>
 
-
       <main>
         {/* Sekcija 1 - Slika desno */}
         <FadeUp delay={0.6}>

@@ -44,8 +44,12 @@ export default function HomeClient() {
           <Navbar />
         </FadeUpStatic>
       </header>
-
-       
+        <FadeUp delay={0.2}>
+          <section aria-label="Nasumičan citat o psihologiji"
+          className="pt-[80px] lg:pt-[100px]">
+            <RandomQuote />
+          </section>
+        </FadeUp>
 
       <main>
         {/* HERO SECTION */}
@@ -86,14 +90,6 @@ export default function HomeClient() {
           </section>
         </FadeUp>
 
-        {/* CITAT */}
-         <FadeUp delay={0.2}>
-          <section aria-label="Nasumičan citat o psihologiji"
-          className="pt-[80px] lg:pt-[100px]">
-            <RandomQuote />
-          </section>
-        </FadeUp>
-      
 
         {/* O MENI */}
         <FadeUp delay={0.6}>
