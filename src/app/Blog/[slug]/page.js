@@ -3,6 +3,7 @@ import path from "path";
 import fs from "fs";
 import Button from "@/components/Button";
 import ImageSectionCover from "@/components/ImageSectionCover";
+import FadeUpStatic from "@/components/FadeUpStatic";
 
 // Funkcija za generisanje slug-a iz naslova
 function generateSlug(title) {
@@ -49,7 +50,9 @@ export default async function BlogPost({ params }) {
   return (
     <>
       <header>
-        <Navbar />
+        <FadeUpStatic>
+          <Navbar />
+        </FadeUpStatic>
       </header>
 
       <main>
@@ -110,7 +113,12 @@ export default async function BlogPost({ params }) {
 
           {/* Dugme za povratak */}
           <section className="mt-10 text-center pb-10">
-            <Button href="/Blog" text="Nazad na blog" styleType="blog" aria-label="Nazad na listu blog postova" />
+            <Button
+              href="/Blog"
+              text="Nazad na blog"
+              styleType="blog"
+              aria-label="Nazad na listu blog postova"
+            />
           </section>
         </article>
       </main>

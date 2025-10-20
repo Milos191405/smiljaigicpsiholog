@@ -4,7 +4,7 @@ import FadeUp from "@/components/FadeUp";
 import FadeUpStatic from "@/components/FadeUpStatic";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ImageSection from "@/components/ImageComponent";
+import ImageComponent from "@/components/ImageComponent";
 import RandomQuote from "@/components/RandomQuote";
 import Button from "@/components/Button";
 import Link from "next/link";
@@ -38,80 +38,90 @@ const sharedDescClass = "mt-4 text-lg md:text-xl lg:text-xl";
 export default function HomeClient() {
   return (
     <>
-      {/* Navbar */}
+      {/* HEADER */}
       <header>
         <FadeUpStatic>
           <Navbar />
         </FadeUpStatic>
       </header>
 
+        <FadeUp delay={0.2}>
+          <section aria-label="Nasumičan citat o psihologiji"
+          className="pt-[80px] lg:pt-[100px]">
+            <RandomQuote />
+          </section>
+        </FadeUp>
+
       <main>
-        {/* Hero Section */}
-        <FadeUp>
-          <section className="pt-[80px] lg:pt-[100px] bg-background-secondary">
+        {/* HERO SECTION */}
+        <FadeUp delay={0.6}>
+          <section
+            className=" bg-background-secondary"
+            aria-labelledby="hero-naslov"
+          >
             <div className="mx-auto md:max-w-[600px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col pt-10 pb-10 lg:flex-row items-center justify-center px-6 md:px-0">
               {/* Tekst leva strana */}
-              <div className="lg:w-2/3 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-xl space-y-4 text-center lg:text-left">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-5xl font-semibold leading-tight italic text-text-primary pb-5">
+              <div className="lg:w-2/3 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl space-y-4 text-center lg:text-left">
+                <h1
+                  id="hero-naslov"
+                  className="text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-semibold leading-tight italic text-text-primary pb-5"
+                >
                   Terapija za decu, tinejdžere i njihove porodice
                 </h1>
-                <p className="my-6 md:pb-5 lg:pb-10 text-lg md:text-xl text-text-secondary">
+                <p className="my-6 md:pb-5 lg:pb-10 text-lg md:text-xl text-primary">
                   Pronađite podršku i razumevanje kroz stručni pristup.
                 </p>
                 <Button
                   href="/Kontakt"
                   text="Zakaži konsultaciju"
                   styleType="consultation"
+                  ariaLabel="Zakaži konsultaciju sa psihologom Smiljom Igić"
                 />
               </div>
 
               {/* Slika desna strana */}
               <aside className="w-3/4 md:w-9/10 lg:w-4/10 mt-10 lg:mt-0 flex justify-end lg:p-5">
-                <ImageSection
+                <ImageComponent
                   src="/Smiljka1.jpg"
-                  width={500}
-                  height={400}
-                  alt="Terapija"
-                  className="w-full h-full object-cover"
-                  priority // ključ za LCP
+                  alt="Terapija za celu porodicu u Beogradu"
+                  priority
                 />
               </aside>
             </div>
           </section>
         </FadeUp>
 
-        {/* Quote Section */}
-        <FadeUp delay={0.2}>
-          <section>
-            <RandomQuote />
-          </section>
-        </FadeUp>
+        {/* CITAT */}
+      
 
-        {/* About Section */}
-        <FadeUp delay={0.4}>
-          <section className="lg:pt-10 bg-background">
+        {/* O MENI */}
+        <FadeUp delay={0.6}>
+          <section className="lg:pt-10 bg-background" aria-labelledby="o-meni-naslov">
             <div className="mx-auto md:max-w-[600px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col pt-1 pb-10 lg:flex-row items-center justify-center px-6 md:px-0">
               {/* Slika leva strana */}
               <div className="w-3/4 md:w-9/10 lg:w-4/10 mt-10 lg:mt-0 flex justify-end lg:p-5">
-                <ImageSection
+                <ImageComponent
                   src="/Smiljka1.jpg"
-                  width={500}
-                  height={400}
-                  alt="Smilja Igic"
+                  alt="Smilja Igić psiholog, Beograd"
                 />
               </div>
 
               {/* Tekst desna strana */}
               <article className="lg:w-2/3 lg:ml-10 mt-10 text-left">
-                <h2 className="text-2xl md:text-3xl lg:text-3xl font-semibold text-text-primary pb-5">
+                <h2
+                  id="o-meni-naslov"
+                  className="text-2xl md:text-3xl lg:text-3xl font-semibold text-text-primary pb-5"
+                >
                   O meni
                 </h2>
                 <p className="mt-6 text-lg md:text-xl text-text-primary">
-                  Dipl. Psiholog Smilja Igic pruža podršku kroz terapijske procese, pomažući deci, tinejdžerima i porodicama da prevaziđu izazove.
+                  Dipl. psiholog Smilja Igić pruža podršku kroz terapijske procese, pomažući deci,
+                  tinejdžerima i porodicama da prevaziđu izazove i pronađu unutrašnju ravnotežu.
                 </p>
                 <Link
                   href="/O_meni"
                   className="mt-6 inline-block text-text-secondary hover:underline"
+                  aria-label="Saznaj više o psihologu Smilji Igić"
                 >
                   Saznaj više
                 </Link>
@@ -120,14 +130,21 @@ export default function HomeClient() {
           </section>
         </FadeUp>
 
-        {/* Services Section */}
-        <FadeUp delay={0.6}>
-          <section className="py-10 bg-background-secondary px-6">
+        {/* USLUGE */}
+        <FadeUp delay={0.8}>
+          <section
+            className="py-10 bg-background-secondary px-6"
+            aria-labelledby="usluge-naslov"
+          >
             <div className="mx-auto md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1800px] text-center max-w-screen-xl">
-              <h2 className="text-2xl lg:text-3xl font-semibold text-text-primary">
+              <h2
+                id="usluge-naslov"
+                className="text-2xl lg:text-3xl font-semibold text-text-primary"
+              >
                 <Link
                   href="/Psihoterapija"
                   className="hover:text-text-secondary"
+                  aria-label="Psihoterapija za decu, tinejdžere i porodice u Beogradu"
                 >
                   Kako mogu pomoći?
                 </Link>
@@ -135,9 +152,10 @@ export default function HomeClient() {
 
               <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
                 {cards.map((card, index) => (
-                  <FadeUp key={index} delay={0.6 + index * 0.2}>
+                  <FadeUp key={index} delay={1 + index * 0.2}>
                     <article
                       className={`p-8 shadow-xl rounded-lg ${card.bg} ${card.text}`}
+                      aria-label={card.title}
                     >
                       <h3 className={sharedTitleClass}>{card.title}</h3>
                       <p className={sharedDescClass}>{card.description}</p>
@@ -149,11 +167,14 @@ export default function HomeClient() {
           </section>
         </FadeUp>
 
-        {/* Contact CTA */}
-        <FadeUp delay={1}>
-          <section className="py-10 bg-text-primary text-background px-6 text-center">
+        {/* KONTAKT CTA */}
+        <FadeUp delay={1.2}>
+          <section
+            className="py-10 bg-text-primary text-background px-6 text-center"
+            aria-labelledby="kontakt-naslov"
+          >
             <div className="max-w-screen-md mx-auto">
-              <h3 className="text-2xl lg:text-3xl font-semibold">
+              <h3 id="kontakt-naslov" className="text-2xl lg:text-3xl font-semibold">
                 Kontaktirajte me
               </h3>
               <p className="pt-4 text-lg md:text-xl">
@@ -164,6 +185,7 @@ export default function HomeClient() {
                   href="https://www.linkedin.com/in/smilja-igi%C4%87-16734866/"
                   text="LinkedIn"
                   styleType="message"
+                  ariaLabel="LinkedIn profil psihologa Smilje Igić, Beograd"
                 />
               </div>
             </div>
@@ -171,10 +193,11 @@ export default function HomeClient() {
         </FadeUp>
       </main>
 
+      {/* FOOTER */}
       <footer>
-        <FadeUp delay={1.2}>
+        <FadeUpStatic>
           <Footer />
-        </FadeUp>
+        </FadeUpStatic>
       </footer>
     </>
   );

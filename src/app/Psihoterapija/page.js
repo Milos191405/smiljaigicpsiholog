@@ -78,13 +78,14 @@ export default function Psihoterapija() {
           <section className="py-6 px-6 bg-background-secondary">
             <div className="mx-auto md:max-w-[600px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col lg:flex-row items-start justify-center px-6 md:px-0">
               {/* Slika */}
-              <div className="w-3/4 md:w-9/10 lg:w-3/10 lg:mt-0 flex justify-end lg:p-5 md:mx-auto">
+              <div className="w-3/4 md:w-9/10 lg:w-3/10 lg:mt-0 flex justify-end lg:p-5 mx-auto">
                 <ImageSection
                   src="/Smiljka1.jpg"
                   width={500}
                   height={400}
                   alt="Psihoterapija"
                   className="w-full h-full object-cover"
+                  priority
                 />
               </div>
 
@@ -171,9 +172,9 @@ export default function Psihoterapija() {
       </main>
 
       <footer>
-        <FadeUp delay={0.6}>
+        <FadeUpStatic>
           <Footer />
-        </FadeUp>
+        </FadeUpStatic>
       </footer>
     </>
   );

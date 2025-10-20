@@ -6,6 +6,7 @@ import Link from "next/link";
 import path from "path";
 import fs from "fs";
 import FadeUp from "@/components/FadeUp";
+import FadeUpStatic from "@/components/FadeUpStatic";
 
 // Function to generate a URL-friendly slug
 function generateSlug(title) {
@@ -33,7 +34,9 @@ export default async function Blog() {
   return (
     <>
       <header>
-        <Navbar />
+        <FadeUpStatic>
+          <Navbar />
+        </FadeUpStatic>
       </header>
 
       <main>
@@ -65,13 +68,14 @@ export default async function Blog() {
                       aria-label={post.title}
                       className="flex flex-col items-center space-y-4"
                     >
-                      <div className="relative w-72 sm:w-92 md:w-96 lg:w-96 aspect-square rounded-xl shadow-md overflow-hidden">
+                      <div className="relative mx-auto w-68 md:w-96  aspect-square rounded-xl shadow-md overflow-hidden">
                         <Image
                           src={post.image}
                           alt={post.title}
                           fill
                           className="object-cover"
                           sizes="(max-width: 640px) 10rem, (max-width: 768px) 13rem, (max-width: 1024px) 16rem, (max-width: 1280px) 20rem, 24rem"
+                          aria-label="Blog-Smilja Igic"
                         />
                       </div>
                       <div className="hover:underline px-2">
@@ -90,7 +94,9 @@ export default async function Blog() {
       </main>
 
       <footer>
-        <Footer />
+        <FadeUpStatic>
+          <Footer />
+        </FadeUpStatic>
       </footer>
     </>
   );
