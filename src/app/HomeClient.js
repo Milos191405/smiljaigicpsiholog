@@ -8,6 +8,8 @@ import ImageComponent from "@/components/ImageComponent";
 import RandomQuote from "@/components/RandomQuote";
 import Button from "@/components/Button";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faViber, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const cards = [
   {
@@ -44,12 +46,14 @@ export default function HomeClient() {
           <Navbar />
         </FadeUpStatic>
       </header>
-        <FadeUp delay={0.2}>
-          <section aria-label="Nasumičan citat o psihologiji"
-          className="pt-[80px] lg:pt-[100px]">
-            <RandomQuote />
-          </section>
-        </FadeUp>
+      <FadeUp delay={0.2}>
+        <section
+          aria-label="Nasumičan citat o psihologiji"
+          className="pt-[80px] lg:pt-[100px]"
+        >
+          <RandomQuote />
+        </section>
+      </FadeUp>
 
       <main>
         {/* HERO SECTION */}
@@ -63,7 +67,7 @@ export default function HomeClient() {
               <div className="lg:w-2/3 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl space-y-4 text-center lg:text-left">
                 <h1
                   id="hero-naslov"
-                  className="text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-semibold leading-tight italic text-text-primary pb-5"
+                  className="text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-semibold leading-tight  text-text-primary pb-5"
                 >
                   Terapija za decu, tinejdžere i njihove porodice
                 </h1>
@@ -90,10 +94,12 @@ export default function HomeClient() {
           </section>
         </FadeUp>
 
-
         {/* O MENI */}
         <FadeUp delay={0.6}>
-          <section className="lg:pt-10 bg-background" aria-labelledby="o-meni-naslov">
+          <section
+            className="lg:pt-10 bg-background"
+            aria-labelledby="o-meni-naslov"
+          >
             <div className="mx-auto md:max-w-[600px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col pt-1 pb-10 lg:flex-row items-center justify-center px-6 md:px-0">
               {/* Slika leva strana */}
               <div className="w-3/4 md:w-9/10 lg:w-4/10 mt-10 lg:mt-0 flex justify-end lg:p-5">
@@ -112,8 +118,9 @@ export default function HomeClient() {
                   O meni
                 </h2>
                 <p className="mt-6 text-lg md:text-xl text-text-primary">
-                  Dipl. psiholog Smilja Igić pruža podršku kroz terapijske procese, pomažući deci,
-                  tinejdžerima i porodicama da prevaziđu izazove i pronađu unutrašnju ravnotežu.
+                  Dipl. psiholog Smilja Igić pruža podršku kroz terapijske
+                  procese, pomažući deci, tinejdžerima i porodicama da prevaziđu
+                  izazove i pronađu unutrašnju ravnotežu.
                 </p>
                 <Link
                   href="/O_meni"
@@ -167,24 +174,52 @@ export default function HomeClient() {
         {/* KONTAKT CTA */}
         <FadeUp delay={1.2}>
           <section
-            className="py-10 bg-text-primary text-background px-6 text-center"
+            className="py-5 bg-text-primary text-background px-6 text-center"
             aria-labelledby="kontakt-naslov"
           >
             <div className="max-w-screen-md mx-auto">
-              <h3 id="kontakt-naslov" className="text-2xl lg:text-3xl font-semibold">
+              <h3
+                id="kontakt-naslov"
+                className="text-2xl lg:text-3xl font-semibold"
+              >
                 Kontaktirajte me
               </h3>
-              <p className="pt-4 text-lg md:text-xl">
+              <div className="flex justify-center mt-5 gap-6 ">
+                <a
+                  href="viber://chat?number=%2B381638344258"
+                  aria-label="Viber"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faViber}
+                    className="text-2xl md:text-4xl text-foreground hover:text-violet-500 transition-all duration-300"
+                  />
+                </a>
+
+                <a
+                  href="https://wa.me/381638344258"
+                  aria-label="WhatsApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    className="text-2xl md:text-4xl text-foreground hover:text-green-600 transition-all duration-300"
+                  />
+                </a>
+              </div>
+              {/* <p className="pt-4 text-lg md:text-xl">
                 Pratite moj rad i kontaktirajte me putem LinkedIn.
-              </p>
-              <div className="flex justify-center mt-6">
-                <Button
+              </p> */}
+              {/* <div className="flex justify-center mt-">
+                 <Button
                   href="https://www.linkedin.com/in/smilja-igi%C4%87-16734866/"
                   text="LinkedIn"
                   styleType="message"
                   ariaLabel="LinkedIn profil psihologa Smilje Igić, Beograd"
                 />
-              </div>
+              </div> */}
             </div>
           </section>
         </FadeUp>

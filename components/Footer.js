@@ -8,7 +8,7 @@ function Footer() {
       <p className="font-semibold">Smilja Igić dipl. psiholog</p>
 
       <div className="flex justify-center gap-4 mt-2">
-        <a
+        {/* <a
           href="https://www.linkedin.com/in/smilja-igi%C4%87-16734866/"
           target="_blank"
           rel="noopener noreferrer"
@@ -17,7 +17,7 @@ function Footer() {
             icon={faLinkedin}
             className="text-lg sm:text-xl md:text-2xl text-foreground hover:text-blue-500 transition-all duration-300"
           />
-        </a>
+        </a> */}
 
         <a
           href="mailto:gajins@yahoo.com"

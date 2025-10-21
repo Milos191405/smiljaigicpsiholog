@@ -51,7 +51,7 @@ export default async function Blog() {
         <section aria-labelledby="blog-title" className="px-4 md:px-0">
           <h1
             id="blog-title"
-            className="italic text-center font-semibold pt-6 text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-text-primary"
+            className="italic text-center font-semibold pt-6 text-xl md:text-2xl lg:text-3xl xl:text-4xl  text-text-primary"
           >
             Blog o psihoterapiji i razvoju deteta
           </h1>

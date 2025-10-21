@@ -36,7 +36,7 @@ export default function O_meni() {
               <div className="lg:w-2/3 xl:w-2/3 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-xl space-y-4 lg:p-10">
                 <h1
                   id="o-meni-naslov"
-                  className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight italic text-center xl:text-4xl 2xl:text-5xl text-text-primary lg:text-left pb-5 lg:pb-10"
+                  className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-center xl:text-4xl 2xl:text-5xl text-text-primary lg:text-left pb-5 lg:pb-10"
                 >
                   Smilja Igić, dipl. psiholog
                 </h1>
