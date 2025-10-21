@@ -98,7 +98,7 @@ export default function HomeClient() {
               {/* Slika leva strana */}
               <div className="w-3/4 md:w-9/10 lg:w-4/10 mt-10 lg:mt-0 flex justify-end lg:p-5">
                 <ImageComponent
-                  src="/Smiljka1.jpg"
+                  src="/Smilja Igic, psiholog Beograd.jpeg"
                   alt="Smilja Igić psiholog, Beograd"
                 />
               </div>

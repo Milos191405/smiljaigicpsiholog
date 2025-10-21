@@ -4,7 +4,8 @@
       "id": 1,
       "title": "Prilagođavanje deteta na vrtić",
       "subtitle": "6 saveta za dobar početak",
-      "image": "/Smiljka1.jpg",
+      "image": "/Smilja Igic, vrtic.jpg",
+      "insideImage": "/Smilja Igic, vrtic2.jpg",
       "subtitles": [
         {
           "id": 1,
@@ -42,7 +43,8 @@
       "id": 2,
       "title": "Trauma kod dece i oporavak",
       "subtitle": "psihoterapijska praksa",
-      "image": "/Smiljka1.jpg",
+      "image": "/Smilja Igic, trauma kod dece.jpg",
+      "insideImage": "/Smilja Igic, trauma kod dece2.jpg",
       "subtitles": [
         {
           "id": 1,
@@ -97,7 +99,8 @@
       "id": 3,
       "title": "Polazak deteta u skolu",
       "subtitle": "6 preporuka za roditelje",
-      "image": "/Smiljka1.jpg",
+      "image": "/Smilja igic, polazak u skolu.jpg",
+      "insideImage": "/Smilja igic, polazak u skolu2.jpg",
       "subtitles": [
         {
           "id": 1,
@@ -135,7 +138,8 @@
       "id": 4,
       "title": "Deca, porodično nasilje i psihoterapija",
       "subtitle": "",
-      "image": "/Smiljka1.jpg",
+      "image": "/Smilja Igic, porodicno nasilje.jpg",
+      "insideImage": "/Smilja Igic, porodicno nasilje2.jpg", 
       "subtitles": [
         {
           "id": 1,
@@ -175,7 +179,8 @@
     {
       "id": 5,
       "title": "Podsticajno i pozitivno roditeljstvo",
-      "image": "/Smiljka1.jpg",
+      "image": "/Smilja Igic, roditeljstvo.jpg",
+      "insideImage": "/Smilja Igic, roditeljstvo2.jpg",
       "subtitles": [
         {
           "subtitle": "Prihvatanje deteta (toplina)",
