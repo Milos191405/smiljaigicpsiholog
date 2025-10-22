@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Button = ({ href, text, styleType, ariaLabel }) => {
   const baseStyles =
-    "inline-block md:text-lg px-8 py-4 rounded-full shadow-lg transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-text-secondary";
+    "inline-block md:text-lg px-8 py-4 rounded-full shadow-lg transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-text-secondary cursor-pointer ";
 
   const styleVariants = {
     consultation:

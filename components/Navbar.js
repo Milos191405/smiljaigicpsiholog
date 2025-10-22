@@ -84,7 +84,7 @@ export default function Navbar() {
         </ul>
 
         <Link href="/Kontakt" className="hidden lg:flex">
-          <button className="border p-2  text-background bg-text-secondary rounded-xl  hover:text-text-primary hover:bg-background">
+          <button className="border p-2  text-background bg-text-secondary rounded-xl  hover:text-text-primary hover:bg-background cursor-pointer">
             Kontakt
           </button>
         </Link>
@@ -125,7 +125,7 @@ export default function Navbar() {
             {/* "Kontakt" Button - Only on Mobile */}
             <li className="lg:hidden " onClick={() => setNav(false)}>
               <Link href="/Kontakt">
-                <button className="border p-2 text-text-secondary rounded-2xl bg-background-secondary hover:text-text-primary hover:border-text-primary">
+                <button className="border p-2 text-text-secondary rounded-2xl bg-background-secondary hover:text-background hover:border-text-primary">
                   Kontakt
                 </button>
               </Link>
@@ -138,7 +138,7 @@ export default function Navbar() {
       {showScrollToTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 p-3 bg-text-primary text-background rounded-full shadow-lg hover:text-orange-300 transition duration-200"
+          className="fixed bottom-5 right-5 p-3 bg-text-primary text-background rounded-full shadow-lg hover:text-orange-300 transition duration-200 cursor-pointer"
           aria-label="Scroll to top"
         >
           <FaArrowUp size={20} />
