@@ -50,6 +50,7 @@ export default function Navbar() {
           {/* Logo always on center */}
           <Link
             href="/"
+            aria-label="Pocetna stranica"
             className="text-2xl font-bold transition-all duration-300 md:text-3xl lg:text-2xl hover:text-text-secondary text-center"
           >
             <h1>Smilja Igić</h1>
@@ -76,7 +77,8 @@ export default function Navbar() {
         <ul className="hidden lg:flex justify-between gap-6 text-lg lg:text-xl">
           {navLinks.map(({ to, label }) => (
             <li key={to}>
-              <Link href={to} className="hover:text-text-secondary">
+              <Link href={to} className="hover:text-text-secondary"
+              aria-label={label === "Pocetna" ? "Pocetna stranica" : label}>
                 {label}
               </Link>
             </li>
@@ -98,7 +100,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
+            arial-label="Pocetna stranica"
             className="text-2xl font-bold mt-6 md:text-3xl text-center"
+
           >
             <h1>Smilja Igić</h1>
             <p className="text-sm">Psiholog i licencirani psihotepeut</p>
@@ -108,6 +112,7 @@ export default function Navbar() {
           <button
             onClick={() => setNav(false)}
             className="absolute top-6 right-6 cursor-pointer text-3xl text-foreground"
+             aria-label="Zatvori meni"
           >
             <FaTimes />
           </button>
