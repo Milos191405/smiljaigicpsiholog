@@ -61,18 +61,14 @@
           "subtitle": "Uloga roditelja",
           "content": "Roditelji imaju veliku odgovornost za razvoj kompleksne traume kod deteta, bilo direktnim izlaganjem deteta traumatskom iskustvu ili nedovoljnim i neadekvatnim angažovanjem u zaštiti deteta."
         },
+      
         {
           "id": 4,
-          "subtitle": "Model terapije",
-          "content": "U tekstu je kroz prikaz tri slučaja iz psihoterapijske prakse predstavljen jedan model rada sa traumom kod dece."
-        },
-        {
-          "id": 5,
           "subtitle": "Faze tretmana",
           "content": "Tretman prati osnovne faze oporavka od traume i obavezno uključuje roditelje."
         },
         {
-          "id": 6,
+          "id": 5,
           "subtitle": "Pristupi terapiji",
           "content": [
             "Dijalektičko bihejvioralna terapija",
@@ -81,7 +77,7 @@
           ]
         },
         {
-          "id": 7,
+          "id": 6,
           "subtitle": "Obrazovni elementi",
           "content": [
             "Neurobiološka teorija razvoja mozga i traume",
@@ -89,7 +85,7 @@
           ]
         },
         {
-          "id": 8,
+          "id": 7,
           "subtitle": "Zaključak",
           "content": "Na efikasnost tretmana u velikoj meri utiče pravovremeno započinjanje. Zaključak teksta naglašava neophodnost sistemskog uvođenja treninga za prepoznavanje simptoma kompleksne traume kod deteta i razvoj veština traume-svesne nege."
         }

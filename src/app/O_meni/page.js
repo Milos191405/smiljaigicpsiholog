@@ -46,7 +46,7 @@ export default function O_meni() {
                 </p>
 
                 <p>
-                  Diplomirala je na Fakultetu u Novom Sadu, gde je stekla temeljna znanja iz psihologije i psihoterapije. Specijalizovala se za rad sa porodicama, partnerskim odnosima i decom sa problemima u ponašanju, pružajući profesionalnu podršku klijentima u Beogradu.
+                  Diplomirala je na Fakultetu u Novom Sadu, gde je stekla temeljna znanja iz psihologije i psihoterapije. <br/>Specijalizovala se za rad sa porodicama, partnerskim odnosima i decom sa problemima u ponašanju, pružajući profesionalnu podršku klijentima u Beogradu.
                 </p>
 
                 <p>
