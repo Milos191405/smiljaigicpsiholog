@@ -193,7 +193,7 @@ export default function HomeClient() {
                 >
                   <FontAwesomeIcon
                     icon={faViber}
-                    className="text-3xl md:text-4xl text-foreground hover:text-violet-500 transition-all duration-300"
+                    className="text-4xl md:text-4xl text-foreground hover:text-violet-500 transition-all duration-300"
                   />
                 </a>
 
@@ -205,7 +205,7 @@ export default function HomeClient() {
                 >
                   <FontAwesomeIcon
                     icon={faWhatsapp}
-                    className="text-3xl md:text-4xl text-foreground hover:text-green-600 transition-all duration-300"
+                    className="text-4xl md:text-4xl text-foreground hover:text-green-600 transition-all duration-300"
                   />
                 </a>
               </div>
