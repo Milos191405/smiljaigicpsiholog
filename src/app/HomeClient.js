@@ -187,7 +187,7 @@ export default function HomeClient() {
               <div className="flex justify-center mt-5 gap-6 ">
                 <a
                   href="viber://chat?number=%2B381638344258"
-                  aria-label="Viber"
+                  aria-label="Kontaktirajte me putem Viber-a"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -199,7 +199,7 @@ export default function HomeClient() {
 
                 <a
                   href="https://wa.me/381638344258"
-                  aria-label="WhatsApp"
+                  aria-label="Kontaktirajte me putem WhatsApp-a"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

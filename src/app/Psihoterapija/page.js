@@ -164,7 +164,12 @@ export default function Psihoterapija() {
                 })}
 
               <div className="flex justify-center mt-12">
-                <Button href="/Kontakt" text="Zakaži konsultaciju" styleType="message" />
+                <Button 
+                href="/Kontakt" 
+                text="Zakaži konsultaciju" 
+                styleType="message"
+                ariaLabel="Zakažite konsultaciju sa psihologom Smiljom Igić"
+                />
               </div>
             </div>
           </section>

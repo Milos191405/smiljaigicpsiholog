@@ -23,6 +23,7 @@ function Footer() {
           href="mailto:gajins@yahoo.com"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Pošaljite mi email"
         >
           <FontAwesomeIcon
             icon={faEnvelope}
@@ -32,7 +33,7 @@ function Footer() {
 
        <a
     href="viber://chat?number=%2B381638344258"
-    aria-label="Viber"
+    aria-label="Kontaktirajte me putem Viber-a"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -44,7 +45,7 @@ function Footer() {
 
   <a
     href="https://wa.me/381638344258"
-    aria-label="WhatsApp"
+    aria-label="Kontaktirajte me putem WhatsApp-a"
     target="_blank"
     rel="noopener noreferrer"
   >
