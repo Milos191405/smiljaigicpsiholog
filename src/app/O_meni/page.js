@@ -62,6 +62,7 @@ export default function O_meni() {
                   height={400}
                   alt="Psiholog Smilja Igić u Beogradu – portret"
                   className="w-full h-full object-cover"
+                  priority={true}
                 />
               </aside>
             </div>

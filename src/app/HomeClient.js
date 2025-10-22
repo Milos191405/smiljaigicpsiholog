@@ -87,7 +87,7 @@ export default function HomeClient() {
                 <ImageComponent
                   src="/Smiljka1.jpg"
                   alt="Terapija za celu porodicu u Beogradu"
-                  priority
+                  priority={true}
                 />
               </aside>
             </div>

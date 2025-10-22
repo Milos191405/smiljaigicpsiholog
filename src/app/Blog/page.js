@@ -73,6 +73,7 @@ export default async function Blog() {
                 fill
                 className="object-cover"
                 sizes="(max-width: 640px) 10rem, (max-width: 768px) 13rem, (max-width: 1024px) 16rem, (max-width: 1280px) 20rem, 24rem"
+                priority={true}
               />
             </div>
             <div className="hover:underline px-2">

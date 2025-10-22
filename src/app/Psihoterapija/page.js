@@ -85,7 +85,7 @@ export default function Psihoterapija() {
                   height={400}
                   alt="Psihoterapija"
                   className="w-full h-full object-cover"
-                  priority
+                  priority={true}
                 />
               </div>
 
