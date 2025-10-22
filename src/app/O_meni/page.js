@@ -57,7 +57,7 @@ export default function O_meni() {
               {/* Slika desno */}
               <aside className="w-3/4 md:w-[90%] lg:w-3/10 mt-10 lg:mt-0 flex justify-end lg:p-5">
                 <ImageSection
-                  src="/Smilja Igic psiholog.jpg"
+                  src="/o_meni_1.jpg"
                   width={500}
                   height={400}
                   alt="Psiholog Smilja Igić u Beogradu – portret"
@@ -82,7 +82,7 @@ export default function O_meni() {
               {/* Slika levo */}
               <aside className="w-3/4 md:w-[90%] lg:w-3/10 lg:mt-0 flex justify-start lg:p-5">
                 <ImageSection
-                  src="/Smiljka2.jpg"
+                  src="/o_meni_2.jpg"
                   width={500}
                   height={400}
                   alt="Psihoterapija u Beogradu – rad sa decom i roditeljima"

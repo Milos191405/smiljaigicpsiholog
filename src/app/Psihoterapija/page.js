@@ -80,7 +80,7 @@ export default function Psihoterapija() {
               {/* Slika */}
               <div className="w-3/4 md:w-9/10 lg:w-3/10 lg:mt-0 flex justify-end lg:p-5 mx-auto">
                 <ImageSection
-                  src="/Smilja Igic, psihoterapija.jpg"
+                  src="/psihoterapija_1.jpg"
                   width={500}
                   height={400}
                   alt="Psihoterapija"
