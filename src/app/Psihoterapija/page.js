@@ -136,7 +136,7 @@ export default function Psihoterapija() {
 
                   const colorVariants = [
                     { bg: "bg-background-ternary", text: "text-background" },
-                    { bg: "bg-text-ternary", text: "text-background" },
+                    { bg: "bg-text-secondary", text: "text-background" },
                     { bg: "bg-background", text: "text-text-primary" },
                   ];
 

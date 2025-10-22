@@ -125,7 +125,9 @@ export default function Navbar() {
             {/* "Kontakt" Button - Only on Mobile */}
             <li className="lg:hidden " onClick={() => setNav(false)}>
               <Link href="/Kontakt">
-                <button className="border p-2 text-text-secondary rounded-2xl bg-background-secondary hover:text-background hover:border-text-primary">
+                <button 
+                className="border p-2 text-text-secondary rounded-2xl bg-background-secondary hover:text-background hover:border-text-primary"
+                aria-label="Kontaktirajte psihologa Smilju Igic">
                   Kontakt
                 </button>
               </Link>

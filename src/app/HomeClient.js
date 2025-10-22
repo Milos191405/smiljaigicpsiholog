@@ -209,17 +209,6 @@ export default function HomeClient() {
                   />
                 </a>
               </div>
-              {/* <p className="pt-4 text-lg md:text-xl">
-                Pratite moj rad i kontaktirajte me putem LinkedIn.
-              </p> */}
-              {/* <div className="flex justify-center mt-">
-                 <Button
-                  href="https://www.linkedin.com/in/smilja-igi%C4%87-16734866/"
-                  text="LinkedIn"
-                  styleType="message"
-                  ariaLabel="LinkedIn profil psihologa Smilje Igić, Beograd"
-                />
-              </div> */}
             </div>
           </section>
         </FadeUp>
