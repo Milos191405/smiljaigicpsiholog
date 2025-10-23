@@ -13,20 +13,20 @@ import { faViber, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const cards = [
   {
-    title: "Psihološko savetovanje",
+    title: "individualno psihološko savetovanje i psihoterapija",
     description:
       "Individualni pristup i profesionalna podrška u prevazilaženju životnih izazova.",
     bg: "bg-background-ternary",
     text: "text-background",
   },
   {
-    title: "Porodična terapija",
+    title: "psihoterapija sa parovima i porodicama",
     description: "Rad na poboljšanju odnosa i razumevanju u porodici.",
     bg: "bg-text-ternary",
     text: "text-background-secondary",
   },
   {
-    title: "Rad sa decom i tinejdžerima",
+    title: "psihološka podrška deci i mladima",
     description: "Podrška u razvoju samopouzdanja i emocionalne inteligencije.",
     bg: "bg-background",
     text: "text-text-primary",

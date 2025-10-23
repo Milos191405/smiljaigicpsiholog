@@ -54,7 +54,7 @@ export default function Navbar() {
             className="text-2xl font-bold transition-all duration-300 md:text-3xl lg:text-2xl hover:text-text-secondary text-center"
           >
             <h1>Smilja Igić</h1>
-            <p className="text-sm">Psiholog i licencirani psihotepeut</p>
+            <p className="text-sm">Psiholog i psihotepeut</p>
           </Link>
 
           {/* Hamburger Icon */}
