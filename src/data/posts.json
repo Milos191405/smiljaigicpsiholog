@@ -61,7 +61,7 @@
           "subtitle": "Uloga roditelja",
           "content": "Roditelji imaju veliku odgovornost za razvoj kompleksne traume kod deteta, bilo direktnim izlaganjem deteta traumatskom iskustvu ili nedovoljnim i neadekvatnim angažovanjem u zaštiti deteta."
         },
-      
+
         {
           "id": 4,
           "subtitle": "Faze tretmana",
@@ -135,7 +135,7 @@
       "title": "Deca, porodično nasilje i psihoterapija",
       "subtitle": "Razumevanje, posledice i podrška",
       "image": "/Smilja Igic, porodicno nasilje.jpg",
-      "insideImage": "/Smilja Igic, porodicno nasilje2.jpg", 
+      "insideImage": "/Smilja Igic, porodicno nasilje2.jpg",
       "subtitles": [
         {
           "id": 1,
@@ -175,6 +175,7 @@
     {
       "id": 5,
       "title": "Podsticajno i pozitivno roditeljstvo",
+      "subtitle": "Balans između ljubavi i strukture",
       "image": "/Smilja Igic, roditeljstvo.jpg",
       "insideImage": "/Smilja Igic, roditeljstvo2.jpg",
       "subtitles": [
@@ -195,6 +196,80 @@
             "Pomoć u savladavanju izazova.",
             "Modelovanje ponašanja i zajedničko rešavanje problema."
           ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Odluka o usvajanju deteta",
+      "subtitle": "Roditeljstvo plus i značaj zrele odluke",
+      "image": "/BlogImages/Smilja Igic, Blog o usvajanju dece.jpg",
+      "insideImage": "/BlogImages/Smilja Igic, Blog o usvajanju dece2.jpg",
+      "subtitles": [
+        {
+          "id": 1,
+          "subtitle": "Usvajanje kao plemenit čin",
+          "content": "O usvojenju najčešće razmišljamo kao o plemenitom činu. Ipak odluku da usvojimo dete ozbiljnije razmatramo tek kada se suočimo sa krizom neplodnosti. Usvojiti dete je celoživotna odluka i zbog toga se ne donosi na prečac."
+        },
+        {
+          "id": 2,
+          "subtitle": "Upoznati sve aspekte odluke",
+          "content": "Najvažnije odluke treba donositi nakon što se upoznamo sa svim aspektima teme, a naročito sa izazovima. Brinuti o detetu sa traumom lišenosti roditeljskog staranja ne može se izjednačiti sa klasičnim izazovima roditeljstva."
+        },
+        {
+          "id": 3,
+          "subtitle": "Roditeljstvo plus",
+          "content": "Usvojenje zbog toga često zovemo roditeljstvo plus. Stručnjaci zbog toga preporučuju da se pre odluke o usvajanju, najpre sa psihoterapeutom prorade sopstvene psihološke barijere koje proizilaze iz brojnih kriznih i traumatskih iskustava života bez deteta."
+        },
+        {
+          "id": 4,
+          "subtitle": "Zrela odluka i lični razvoj",
+          "content": "Osim što na ovaj način osoba ima šansu za lični razvoj, osigurava se i preduslov za donošenje zrele odluke o usvajanju."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Problemi u ponašanju dece osnovnoškolskog uzrasta",
+      "subtitle": "Kada je u pitanju briga, a kada potražiti stručnu pomoć",
+      "image": "/BlogImages/problemi u skoli.jpg",
+      "insideImage": "/BlogImages/problemi u skoli2.jpg",
+      "subtitles": [
+        {
+          "id": 1,
+          "subtitle": "Razumevanje ponašanja deteta",
+          "content": "Često kao roditelji preispitujemo reakcije naše dece. Naši strahovi i strepnje usled brige ponekad su i prekomerni. Zapitamo se šta je normalno ponašanje, da li preterujemo sa brigom i kada je vreme da zatražimo stručnu pomoć. Stručnjaci nude određene smernice koje mogu pomoći roditeljima da prepoznaju granicu između prolaznih razvojnih faza i ozbiljnijih problema."
+        },
+        {
+          "id": 2,
+          "subtitle": "Problemi koji mogu da se prevaziđu uz savete stručnjaka",
+          "content": [
+            "Svađe sa braćom/sestrama i vršnjacima",
+            "Radoznalost povodom muških i ženskih polnih organa",
+            "Testiranje granica (neposlušnost, durenje, odbijanje da prihvati nalog)",
+            "Ograničen raspon pažnje",
+            "Laganje",
+            "Zabrinutost da li će biti prihvaćeni od drugih",
+            "Nepreuzimanje odgovornosti za svoje ponašanje"
+          ]
+        },
+        {
+          "id": 3,
+          "subtitle": "Problemi koji zahtevaju pažljivije ispitivanje stručnjaka",
+          "content": [
+            "Preterana agresivnost",
+            "Ozbiljno povređivanje sebe ili drugih (psihički ili fizički)",
+            "Česte, produžene ili preterane emocionalne reakcije",
+            "Odbijanje da se ide u školu",
+            "Obrasci delinkventskog ponašanja",
+            "Preterani strahovi",
+            "Fiksacija na vatru, paljenje vatre"
+          ]
+        },
+        {
+          "id": 4,
+          "subtitle": "Izvor",
+          "content": "Preuzeto iz publikacije „Mentalno zdravlje u školama“, IMZ Beograd, 2024."
         }
       ]
     }
