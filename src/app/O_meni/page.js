@@ -17,11 +17,13 @@ export default function O_meni() {
       </header>
 
       <FadeUp delay={0.2}>
-          <section aria-label="Inspirativna izreka"
-          className="pt-[80px] lg:pt-[100px]">
-            <RandomQuote />
-          </section>
-        </FadeUp>
+        <section
+          aria-label="Inspirativna izreka"
+          className="pt-[80px] lg:pt-[100px]"
+        >
+          <RandomQuote />
+        </section>
+      </FadeUp>
 
       <main>
         {/* Sekcija 1 - Slika desno */}
@@ -31,28 +33,42 @@ export default function O_meni() {
             className=" bg-background-secondary"
           >
             <div className="mx-auto md:max-w-[600px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col pt-10 pb-10 lg:flex-row items-center justify-center px-6 md:px-0">
-              
               {/* Tekstualni deo */}
-              <div className="lg:w-2/3 xl:w-2/3 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-xl space-y-4 lg:p-10">
-                <h1
-                  id="o-meni-naslov"
-                  className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-center xl:text-4xl 2xl:text-5xl text-text-primary lg:text-left pb-5 lg:pb-10"
-                >
-                  Smilja Igić, dipl. psiholog
-                </h1>
+            <div className="lg:w-2/3 xl:w-2/3 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-xl space-y-4 lg:p-10">
+  <h1
+    id="o-meni-naslov"
+    className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight text-center xl:text-4xl 2xl:text-5xl text-text-primary lg:text-left pb-5 lg:pb-10"
+  >
+    Smilja Igić, dipl. psiholog
+  </h1>
 
-                <p>
-                  <strong>Psiholog</strong> i <strong>psihoterapeut</strong> sa preko 23 godine iskustva u radu sa porodicama, partnerima i decom, posebno u okviru socijalne zaštite.
-                </p>
+  <p>
+    Smilja Igić je <strong>psiholog</strong> i <strong>psihoterapeut</strong> sa više od dve decenije iskustva u radu sa
+    porodicama, parovima, decom i pojedincima. Posvećena je pružanju podrške u prevazilaženju životnih kriza, jačanju
+    porodičnih odnosa i unapređenju mentalnog zdravlja.
+  </p>
 
-                <p>
-                  Diplomirala je na Fakultetu u Novom Sadu, gde je stekla temeljna znanja iz psihologije i psihoterapije. <br/>Specijalizovala se za rad sa porodicama, partnerskim odnosima i decom sa problemima u ponašanju, pružajući profesionalnu podršku klijentima u Beogradu.
-                </p>
+  <p>
+    Studije psihologije završila je na <strong>Filozofskom fakultetu u Novom Sadu</strong>, a nakon toga i četvorogodišnju
+    edukaciju iz <strong>sistemske porodične psihoterapije</strong> u okviru Udruženja
+    <strong> Centar za porodicu i porodične terapeute CEPTE</strong> u Beogradu. Trenutno pohađa drugu godinu programa
+    <strong> supervizije rada sa traumom</strong>.
+  </p>
 
-                <p>
-                  Njena praksa uključuje individualne konsultacije, porodičnu terapiju i rad sa decom i tinejdžerima, pomažući im da razviju emocionalnu inteligenciju i samopouzdanje.
-                </p>
-              </div>
+  <p>
+    Kroz brojne edukacije u zemlji i inostranstvu, dodatno se usavršavala u oblastima podrške porodicama, parovima i deci,
+    kao i u radu sa stručnjacima iz sistema socijalne zaštite i obrazovanja. 
+  </p>
+
+  <p>
+    Smilja je <strong>trener programa Pozitivnog roditeljstva</strong> i realizator brojnih programa namenjenih stručnjacima
+    koji rade sa decom i porodicama. Poseduje <strong>osnovnu i specijalizovane licence</strong> za superviziju i
+    psihološko savetovanje, izdate od strane <strong>Komore socijalne zaštite Republike Srbije</strong>.
+  </p>
+</div>
+
+
+
 
               {/* Slika desno */}
               <aside className="w-3/4 md:w-[90%] lg:w-3/10 mt-10 lg:mt-0 flex justify-end lg:p-5">
@@ -69,8 +85,6 @@ export default function O_meni() {
           </section>
         </FadeUp>
 
-      
-        
         {/* Sekcija 2 - Slika levo */}
         <FadeUp delay={0.4}>
           <section
@@ -78,7 +92,6 @@ export default function O_meni() {
             aria-label="Psihoterapija – Smilja Igić"
           >
             <div className="mx-auto md:max-w-[600px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1400px] flex flex-col pt-10 pb-10 lg:flex-row items-center justify-center px-6 md:px-0">
-              
               {/* Slika levo */}
               <aside className="w-3/4 md:w-[90%] lg:w-3/10 lg:mt-0 flex justify-start lg:p-5">
                 <ImageSection
@@ -92,23 +105,35 @@ export default function O_meni() {
               </aside>
 
               {/* Tekstualni deo */}
-              <section className="lg:w-2/3 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-xl space-y-4 lg:ml-10 mt-10">
-                <p>
-                  Dugogodišnje iskustvo stekla je kao savetnik na roditeljskom telefonu i dečijoj liniji, pružajući podršku i smernice roditeljima i deci u kriznim situacijama u Beogradu.
-                </p>
+            <section className="lg:w-2/3 text-text-primary text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-xl space-y-4 lg:ml-10 mt-10">
+  <p>
+    Dugogodišnje iskustvo stekla je i kao <strong>savetnik na Roditeljskom telefonu</strong> i 
+    <strong> Dečijoj liniji</strong>, pružajući podršku i smernice roditeljima i deci u kriznim situacijama.
+  </p>
 
-                <p>
-                  Njena psihoterapijska praksa fokusira se na rešavanje izazova narušenih partnerskih odnosa, roditeljstva i emotivnih gubitaka, kao i na individualne sesije za decu i tinejdžere.
-                </p>
+  <p>
+    Njena <strong>psihoterapijska praksa</strong> usmerena je na podršku klijentima u ličnom razvoju, ali i u
+    prevazilaženju različitih životnih izazova kao što su razvojne i situacione krize, poremećaji ponašanja,
+    traume, gubici i narušeni partnerski odnosi.
+  </p>
 
-                <p>
-                  Pomaže osobama koje se suočavaju sa stresom, anksioznošću i traumama, koristeći moderne metode psihoterapije i prilagođene tehnike za svaku starosnu grupu.
-                </p>
+  <p>
+    <strong>Rad sa decom</strong> uvek uključuje i saradnju sa roditeljima, zasnovan je na partnerskom odnosu i
+    pridruživanju detetu, uz cilj da se stvori sigurno i podržavajuće okruženje za razvoj i promenu.
+  </p>
 
-                <p className="pb-4">
-                  Poslednje dve godine posvećena je dodatnoj edukaciji u radu sa traumom kod dece i odraslih, kako bi pružila još efikasniju podršku klijentima iz Beograda i šire.
-                </p>
-              </section>
+  <p>
+    Više od <strong>dve decenije</strong> ima iskustva u realizaciji <strong>grupnih psihosocijalnih radionica za usvojitelje</strong>,
+    kao i u radu sa porodicama sa usvojenom decom, pružajući podršku u procesu prilagođavanja i izgradnje porodičnih veza.
+  </p>
+
+  <p className="pb-4">
+    Stekavši <strong>međunarodni sertifikat norveške organizacije ATV</strong>, realizovala je brojne
+    <strong> grupne psihoterapijske seanse sa počiniocima partnerskog nasilja</strong>, sa ciljem prevencije
+    recidiva nasilja i zaštite žena i dece žrtava nasilja.
+  </p>
+</section>
+
             </div>
           </section>
         </FadeUp>
