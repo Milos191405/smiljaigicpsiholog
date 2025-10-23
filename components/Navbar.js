@@ -105,7 +105,7 @@ export default function Navbar() {
 
           >
             <h1>Smilja Igić</h1>
-            <p className="text-sm">Psiholog i licencirani psihotepeut</p>
+            <p className="text-sm font-bold">Psiholog i psihotepeut</p>
           </Link>
 
           {/* Close Button */}
