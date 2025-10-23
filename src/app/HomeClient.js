@@ -69,7 +69,7 @@ export default function HomeClient() {
                   id="hero-naslov"
                   className="text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-semibold leading-tight  text-text-primary pb-5"
                 >
-                  Terapija za decu, tinejdžere i njihove porodice
+                  Psihološko savetovanje i psihoterapija za decu i odrasle
                 </h1>
                 <p className="my-6 md:pb-5 lg:pb-10 text-lg md:text-xl text-primary">
                   Pronađite podršku i razumevanje kroz stručni pristup.
