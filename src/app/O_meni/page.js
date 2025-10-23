@@ -48,12 +48,13 @@ export default function O_meni() {
     porodičnih odnosa i unapređenju mentalnog zdravlja.
   </p>
 
-  <p>
-    Studije psihologije završila je na <strong>Filozofskom fakultetu u Novom Sadu</strong>, a nakon toga i četvorogodišnju
-    edukaciju iz <strong>sistemske porodične psihoterapije</strong> u okviru Udruženja
-    <strong> Centar za porodicu i porodične terapeute CEPTE</strong> u Beogradu. Trenutno pohađa drugu godinu programa
-    <strong> supervizije rada sa traumom</strong>.
-  </p>
+ <p>
+  Studije psihologije završila je na <strong>Filozofskom fakultetu u Novom Sadu</strong>, a nakon toga i četvorogodišnju
+  edukaciju iz <strong>sistemske porodične psihoterapije</strong> u okviru Udruženja
+  <strong> Centar za porodicu i porodične terapeute CEPTE</strong> u Beogradu. Aktuelno je već drugu godinu
+  u <strong>specijalizovanom supervizijskom procesu rada sa traumom</strong>.
+</p>
+
 
   <p>
     Kroz brojne edukacije u zemlji i inostranstvu, dodatno se usavršavala u oblastima podrške porodicama, parovima i deci,
