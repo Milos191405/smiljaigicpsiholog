@@ -119,9 +119,11 @@ export default function HomeClient() {
                 </h2>
                 <p className="mt-6 text-lg md:text-xl text-text-primary">
                   Dipl. psiholog Smilja Igić pruža podršku kroz terapijske
-                  procese, pomažući deci, tinejdžerima i porodicama da prevaziđu
-                  izazove i pronađu unutrašnju ravnotežu.
+                  procese, pomažući deci i odraslima, porodicama, parovima i
+                  pojedincima da prevaziđu izazove i pronađu unutrašnju
+                  ravnotežu.
                 </p>
+
                 <Link
                   href="/O_meni"
                   className="mt-6 inline-block text-text-secondary hover:underline"
